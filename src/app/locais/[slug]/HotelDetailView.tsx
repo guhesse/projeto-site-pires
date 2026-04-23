@@ -155,16 +155,37 @@ export default function HotelDetailView({ hotel }: Props) {
               </FadeIn>
 
               {/* Salas de eventos */}
-              {hotel.meetingRooms && hotel.meetingRooms !== "-" && (
+              {hotel.salas.length > 0 && (
                 <FadeIn delay={150}>
                   <div className="mt-8 p-6 bg-[#E2D8DA] rounded-[20px]">
-                    <h3 className="text-[18px] lg:text-[20px] font-light text-[#3A0814] mb-3 flex items-center gap-2">
+                    <h3 className="text-[18px] lg:text-[20px] font-light text-[#3A0814] mb-4 flex items-center gap-2">
                       <Building2 className="w-5 h-5 text-[#A01259]" />
                       Salas de Eventos
                     </h3>
-                    <p className="text-[14px] lg:text-[15px] font-light text-[#53212D] whitespace-pre-line leading-relaxed">
-                      {hotel.meetingRooms}
-                    </p>
+                    <div className="overflow-x-auto">
+                      <table className="w-full text-left text-[13px] lg:text-[14px] font-light text-[#53212D]">
+                        <thead>
+                          <tr className="border-b border-[#C4B5BB]">
+                            <th className="pb-2 pr-6 font-normal text-[#A78991] uppercase tracking-wider text-[11px]">Sala</th>
+                            <th className="pb-2 pr-6 font-normal text-[#A78991] uppercase tracking-wider text-[11px]">Tipo</th>
+                            <th className="pb-2 font-normal text-[#A78991] uppercase tracking-wider text-[11px]">Capacidade</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {hotel.salas.map((sala, i) => (
+                            <tr key={i} className="border-b border-[#C4B5BB]/40 last:border-0">
+                              <td className="py-2 pr-6">{sala.nome}</td>
+                              <td className="py-2 pr-6 capitalize">{sala.tipo}</td>
+                              <td className="py-2">
+                                {sala.pax > 0
+                                  ? `${sala.pax.toLocaleString("pt-BR")} pax`
+                                  : "—"}
+                              </td>
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
                   </div>
                 </FadeIn>
               )}

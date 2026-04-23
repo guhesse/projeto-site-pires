@@ -1,370 +1,1078 @@
 [
-{
-    "hotel": "Royal Palm Plaza",
-    "Localização": "Campinas / SP",
-    "Quantidade de aptos": "430",
-    "Configuração dos aptos": "SGL, DBL, TPL",
-    "Número de leitos (capacidade máxima de hóspedes)": "1100",
-    "Tipos de pensão": "Café da manhã\nPensão completa*\n*Observando a capacidade do restaurante, pode ser necessário realizar as refeições no Hall.",
-    "Capacidade do maior espaço (auditório)": "1100",
-    "Número de salas": "Imperial (10 mód.): 1100 pax auditório\nFoyer: 800 pax coquetel\nDom Pedro (4 mód.): 120 pax auditório\nDom João (3 mód.): 90 pax auditório\n2 salas de apoio: 24 pax auditório em cada\n\nPaço dos Nobres (4 mód.) + Foyer: 550 pax auditório\nPaço dos Nobres (4 mód.): 420 pax auditório\n2 salas de apoio: 15 pax auditório em cada sala\nFoyer: 250 pax coquetel\n\nCasa de Campo: 900 pax auditório\nVaranda: 550 coquetel\nSala de apoio: 30 pax auditório\n\nInfante Dom Henrique: 130 pax auditório\nFoyer: 100 pax coquetel\n\n2 boardrooms: 12 e 18 pax\nLumini (cinema): 70 pax\nArena de Pedra: 160 pax",
-    "Principais Distâncias": "16 Km do Aeroporto Internacional de Viracopos (15 minutos)\n90 km do Centro de São Paulo\n110 Km do Aeroporto Internacional de Guarulhos\n5 Km do Centro de Campinas",
-    "Restaurantes": "Vila Royal: 330 pax\nTerraço Gourmet: 300 pax\nLa Palette: 44 pax\nAdega Cave do Ouro: 40 pax",
-    "Estrutura de Lazer": "2 bares, café gourmet, 5 piscinas, 2 playgrounds aquáticos, Spa, Miniville, Kata Kuka, 4 quadras de tênis, campo de futebol society, ginásio poliesportivo e fitness center",
-    "Atrações turísticas regionais": "Bares, botecos, casas de shows. Mercado Municipal, Observatório Municipal de Campinas Jean Nicolini, Catedral Metropolitana de Campinas, Bosque dos Jequitibás. Zoo de Americana, Outlet Premium e Wet\u0027n Wild em Itupeva. Holambra, capital nacional das flores.",
-    "Principais concorrentes": "Bourbon Atibaia",
-    "imagem": "/images/hotels/royal-palm-plaza.webp"
-},
-{
-    "hotel": "Royal Palm Tower Anhanguera",
-    "Localização": "Campinas / SP",
-    "Quantidade de aptos": "190",
-    "Configuração dos aptos": "SGL, DBL",
-    "Número de leitos (capacidade máxima de hóspedes)": "380",
-    "Tipos de pensão": "Café da manhã\nPensão completa*\n*Observando a capacidade do restaurante, pode ser necessário realizar as refeições no Hall.",
-    "Capacidade do maior espaço (auditório)": "600",
-    "Número de salas": "Salão Anhanguera (3 mód.) + Foyer: 600 pax auditório\nSalão Anhanguera (3 mód.): 460 pax auditório\nSala Flamboyant e Sala Figueira: 40 pax em cada\nFoyer: 200 pax coquetel",
-    "Principais Distâncias": "16 Km do Aeroporto Internacional de Viracopos (15 minutos)\n90 km do Centro de São Paulo\n110 Km do Aeroporto Internacional de Guarulhos\n5 Km do Centro de Campinas",
-    "Restaurantes": "1 (capacidade 240 pax)",
-    "Estrutura de Lazer": "Lobby bar, fitness center, piscina e sauna",
-    "Atrações turísticas regionais": "Bares, botecos, casas de shows. Mercado Municipal, Observatório Municipal de Campinas Jean Nicolini, Catedral Metropolitana de Campinas, Bosque dos Jequitibás. Zoo de Americana, Outlet Premium e Wet\u0027n Wild em Itupeva. Holambra, capital nacional das flores.",
-    "Principais concorrentes": "Radisson Red Campinas\nVitória Concept\nRamada\nMeliã Campinas",
-    "imagem": "/images/hotels/royal-palm-tower-anhanguera.webp"
-},
-{
-    "hotel": "Hotel Contemporâneo",
-    "Localização": "Campinas / SP",
-    "Quantidade de aptos": "280",
-    "Configuração dos aptos": "SGL, DBL",
-    "Número de leitos (capacidade máxima de hóspedes)": "560",
-    "Tipos de pensão": "Café da manhã\nPensão completa*\n*Observando a capacidade do restaurante, pode ser necessário realizar as refeições no Hall.",
-    "Capacidade do maior espaço (auditório)": "0",
-    "Número de salas": "-",
-    "Principais Distâncias": "16 Km do Aeroporto Internacional de Viracopos (15 minutos)\n90 km do Centro de São Paulo\n110 Km do Aeroporto Internacional de Guarulhos\n5 Km do Centro de Campinas",
-    "Restaurantes": "1 self-service (capacidade 250 pax)",
-    "Estrutura de Lazer": "-",
-    "Atrações turísticas regionais": "Bares, botecos, casas de shows. Mercado Municipal, Observatório Municipal de Campinas Jean Nicolini, Catedral Metropolitana de Campinas, Bosque dos Jequitibás. Zoo de Americana, Outlet Premium e Wet\u0027n Wild em Itupeva. Holambra, capital nacional das flores.",
-    "Principais concorrentes": "Go Inn Campinas\nIbis Campinas\nRio Hotel by Bourbon\nCampinas\nSleep Inn Galleria",
-    "imagem": "/images/hotels/hotel-contemporaneo.webp"
-},
-{
-    "hotel": "Royal Palm Hall",
-    "Localização": "Campinas / SP",
-    "Quantidade de aptos": "Anhanguera + Plaza + Contemporâneo*",
-    "Configuração dos aptos": "-",
-    "Número de leitos (capacidade máxima de hóspedes)": "-",
-    "Tipos de pensão": "-",
-    "Capacidade do maior espaço (auditório)": "450",
-    "Número de salas": "Salão Monumental (7 mód.): 5000 pax auditório\nSala Paineiras (3 mód.): 140 pax auditório\n3 Foyers: 1.300 pax coquetel no total\n\nSala Campinas: 600 pax auditório\nSala Jatobá (3 mód.): 70 pax auditório\n2 Foyers: 500 e 850 pax coquetel\nSalão Exposições: 2.615 m², pé direito 5,7 m\n\nPiso Laranjeira: 14 salas de 36 pax auditório em cada + área para coffee break\n\nPiso Jacarandá: 12 salas para 40 a 55 pax auditório em cada + 2 salas para 70 pax auditório em cada  + área para coffee break\n\nPiso Buriti: 4 salas de 56 a 80 pax auditório em cada + 1 sala para 120 pax auditório em cada  + área para coffee break",
-    "Principais Distâncias": "16 Km do Aeroporto Internacional de Viracopos (15 minutos)\n90 km do Centro de São Paulo\n110 Km do Aeroporto Internacional de Guarulhos\n5 Km do Centro de Campinas",
-    "Restaurantes": "-",
-    "Estrutura de Lazer": "-",
-    "Atrações turísticas regionais": "Bares, botecos, casas de shows. Mercado Municipal, Observatório Municipal de Campinas Jean Nicolini, Catedral Metropolitana de Campinas, Bosque dos Jequitibás. Zoo de Americana, Outlet Premium e Wet\u0027n Wild em Itupeva. Holambra, capital nacional das flores.",
-    "Principais concorrentes": "-",
-    "imagem": "/images/hotels/royal-palm-hall.jpg"
-},
-{
-    "hotel": "Royal Palm Tower Indaiatuba",
-    "Localização": "Indaiatuba / SP",
-    "Quantidade de aptos": "190",
-    "Configuração dos aptos": "SGL, DBL",
-    "Número de leitos (capacidade máxima de hóspedes)": "280",
-    "Tipos de pensão": "Café da manhã\nPensão completa",
-    "Capacidade do maior espaço (auditório)": "450",
-    "Número de salas": "Salão Santos Dumont (4 mód.) + Foyer: 450 pax auditório\nSalão Santos Dumont (4 mód.): 400 pax auditório\n6 suítes executivas (salas de apoio)\nFoyer: 150 pax coquetel",
-    "Principais Distâncias": "19 Km do Aeroporto de Viracopos (15 minutos)\n114 Km do Aeroporto de Congonhas\n126 Km Aeroporto Internacional de Guarulhos\n100 Km de São Paulo (capital)\n51 km da Rodovia Santos\n25 Km de Campinas ou Itu\n58 Km de Sorocaba\n80 Km de Piracicaba",
-    "Restaurantes": "1 (capacidade 160 pax)",
-    "Estrutura de Lazer": "Lobby bar, cobertura com fitness center, sauna e psicina de hidromassagem",
-    "Atrações turísticas regionais": "Bares, botecos, casas de shows. Mercado Municipal, Observatório Municipal de Campinas Jean Nicolini, Catedral Metropolitana de Campinas, Bosque dos Jequitibás. Zoo de Americana, Outlet Premium e Wet\u0027n Wild em Itupeva. Holambra, capital nacional das flores.",
-    "Principais concorrentes": "Vitória Hotel Convention Indaiatuba\nTravel Inn Wise Indaiatuba\nRamada by WyndhamCampinas Viracopos\nMeliã Campinas",
-    "imagem": "/images/hotels/royal-palm-tower-indaiatuba.jpg"
-},
-{
-    "hotel": "Oceania Park Hotel e Convention Center",
-    "Localização": "Praia dos Ingleses, Florianópolis / SC",
-    "Quantidade de aptos": "82",
-    "Configuração dos aptos": "SGL, DBL, TPL, QDL",
-    "Número de leitos (capacidade máxima de hóspedes)": "328",
-    "Tipos de pensão": "Café da manhã\nMeia pensão\nPensão completa",
-    "Capacidade do maior espaço (auditório)": "2000",
-    "Número de salas": "Sala Diamante: 2000 pax auditório\nMezanino: 300 pax auditório\nSalas Ágata + Topázio (4 mód.): 620 pax auditório\nSala Esmeralda (2 mód.): 300 pax auditório\nFoyer: 500 pax banquete\n2 salas no hotel: 100 e 80 pax auditório",
-    "Principais Distâncias": "42 Km do Aeroporto de Florianópolis (45 minutos)\n30 Km do Centro de Florianópolis",
-    "Restaurantes": "1 (capacidade 80 pax)",
-    "Estrutura de Lazer": "Lounge bar, saunas, 2 piscinas, bar à beira da piscina, espaço para crianças, quadra de\ntênis, campo de futebol, quadras de vôlei de praia, futevôlei e beach tennis, área interna de jogos com sinuca.",
-    "Atrações turísticas regionais": "Praia dos Ingleses, passeios em Santo Antônio de Lisboa, Praia de Jurerê, Praia do Forte, Praia dos Ingleses, Praia do Santinho e Canasvieiras.",
-    "Principais concorrentes": "Il Campanário\nCostão do Santinho\nJurerê Beach Village",
-    "imagem": "/images/hotels/oceania-park-hotel.jpg"
-},
-{
-    "hotel": "Iate Hotel",
-    "Localização": "Centro, Florianópolis/SC",
-    "Quantidade de aptos": "83",
-    "Configuração dos aptos": "SGL, DBL, TPL",
-    "Número de leitos (capacidade máxima de hóspedes)": "259",
-    "Tipos de pensão": "Café da manhã\nMeia pensão\nPensão completa",
-    "Capacidade do maior espaço (auditório)": "120",
-    "Número de salas": "2 salas: 100 e 120 pax",
-    "Principais Distâncias": "9 Km do Aeroporto de Florianópolis (10 minutos)\n500 m do Centro de Florianópolis\n900 m do Centrosul (3 minutos)",
-    "Restaurantes": "1 (capacidade 90 pax)",
-    "Estrutura de Lazer": "Bar e academia",
-    "Atrações turísticas regionais": "Ponte Hercílio Luz, Mercado Público, Catedral Metropolitana, Palácio Cruz e Sousa, Praça XV de Novembro, Museu Casa de Câmara e Cadeia, Prédio da Casa de Alfândega, Avenida Beira Mar Norte.",
-    "Principais concorrentes": "Intercity\nFlorianópolis Palace Hotel / Rede Andrade Floph\nFaial Prime Suites",
-    "imagem": "/images/hotels/iate-hotel.avif"
-},
-{
-    "hotel": "Hotel 7",
-    "Localização": "Itajaí/SC",
-    "Quantidade de aptos": "50",
-    "Configuração dos aptos": "SGL, DBL + cama extra",
-    "Número de leitos (capacidade máxima de hóspedes)": "101",
-    "Tipos de pensão": "Café da manhã",
-    "Capacidade do maior espaço (auditório)": "60",
-    "Número de salas": "Sala Mar: 60 pax em auditório;\nSala Terra: 20 pax em auditório",
-    "Principais Distâncias": "5,9km do aeroporto de Navegantes; \n800m do Centro de Eventos Marejada;",
-    "Restaurantes": "-",
-    "Estrutura de Lazer": "-",
-    "Atrações turísticas regionais": "Praia Brava, Praia de Cabeçudas, Catedral, Mercado Público, Morro da Cruz, Porto, Parque Aquático Zacarias, Marina, Museu Histórico, Mole, Centreventos, Shopping, Beira Rio",
-    "Principais concorrentes": "Hotel Ibis\nHotel Sandri",
-    "imagem": "/images/hotels/hotel-7.webp"
-},
-{
-    "hotel": "Vila Galé Alagoas",
-    "Localização": "Barra Santo Antonio/AL",
-    "Quantidade de aptos": "513",
-    "Configuração dos aptos": "Standard, Família, NEP, Superior, Superior Família, Suíte, Suíte Família, Chalé, Chalé NEP, Chalé Superior e Chalé Master",
-    "Número de leitos (capacidade máxima de hóspedes)": "acima de 1.026",
-    "Tipos de pensão": "All Inclusive",
-    "Capacidade do maior espaço (auditório)": "1200",
-    "Número de salas": "Master: 1200 pax em auditório;\nFoyer: 700 pax em auditório;\nEça de Queiroz: 48 pax em auditório;\nJorge Amado: 40 pax em auditório;\nCarlos Drummond de Andrade: 40 pax em auditório;\nFernando Pessoa: 60 pax em auditório",
-    "Principais Distâncias": "Maceió − 48 km\nAeroporto Internacional de Maceió − 62 km",
-    "Restaurantes": "7 restaurantes",
-    "Estrutura de Lazer": "Piscina, Parque Aquático, 1 quadra poliesportiva, 1 quadra de tênis, 1 quadra de futebol de areia, 1 quadra de volêi de praia e beach tennis, Academia, Espaço Galera, Sala de jogos, Spa",
-    "Atrações turísticas regionais": "Piscinas naturais de Pajuçara, Orla de Ponta Verde, Praia de Ipioca, Feirinha de Artesanato da Pajuçara, Barracas de Praia",
-    "Principais concorrentes": "Maceio Mar Hotel, Jatiúca Hotel e Resort, Hotel Ritz Lagoa da Anta, Matsubara Hotel",
-    "imagem": "/images/hotels/vila-gale-alagoas.webp"
-},
-{
-    "hotel": "Vila Galé Cumbuco",
-    "Localização": "Caucaia/CE",
-    "Quantidade de aptos": "537",
-    "Configuração dos aptos": "Standard, Superior, Família, Suíte, Suíte Família, Suíte Junior, Chalé, Chalé Família, Chalé Superior e Chalé Master",
-    "Número de leitos (capacidade máxima de hóspedes)": "acima de 1.074",
-    "Tipos de pensão": "All Inclusive",
-    "Capacidade do maior espaço (auditório)": "600",
-    "Número de salas": "Marés: 450 pax em auditório;\nSalvador: 200 pax em auditório;\nCumbuco: 150 pax em auditório;\nFortaleza: 30 pax em auditório;\nAngra: 30 pax em auditório;\nTavira: 30 pax em auditório;\nAlbacora: 30 pax em auditório",
-    "Principais Distâncias": "Caucaia − 24 km\nAeroporto de Fortaleza − 45 km\nVila Galé Fortaleza − 50 km\nCentro de Fortaleza − 33 Km",
-    "Restaurantes": "6 restaurantes",
-    "Estrutura de Lazer": "Piscina, Biblioteca, 1 quadra poliesportiva, 1 quadra de tênis, 1 quadra de volêi de praia, 1 quadra de beach tennis, Academia, Espaço Galera, Sala de jogos, Spa",
-    "Atrações turísticas regionais": "Praias urbanas como a Praia do Futuro (ideal para banho e barracas estruturadas), Meireles (feirinha de artesanato) e Iracema (ponte dos ingleses). Destacam-se também o complexo cultural Dragão do Mar, o Mercado Central, o Theatro José de Alencar e o famoso parque aquático Beach Park, localizado na vizinha Aquiraz. ",
-    "Principais concorrentes": "Beach Park, Hotel Parque das Fontes, Hotel Gran Marquise, Dom Pedro Laguna, Carmel Hotéis",
-    "imagem": "/images/hotels/vila-gale-cumbuco.webp"
-},
-{
-    "hotel": "Vila Galé Eco Resort Angra",
-    "Localização": "Angra dos Reis/RJ",
-    "Quantidade de aptos": "321",
-    "Configuração dos aptos": "Standard, Superior, Família, Superior Família, Suíte, Suíte Superior",
-    "Número de leitos (capacidade máxima de hóspedes)": "acima de 642",
-    "Tipos de pensão": "All Inclusive",
-    "Capacidade do maior espaço (auditório)": "1500",
-    "Número de salas": "Ballroom: 1500 pax em auditório:\nBrisa 1 e 2: 168 pax em auditório/cada;\nBrina 3: 230 pax em auditório;\nCentauro 1 a 3: 230 pax em auditório/cada;\nBallroom Enseada: 400 pax em auditório;\nEnseada 1 a 4: 50 pax em auditório/cada;\nEnseada 5: 110 pax em auditório.",
-    "Principais Distâncias": "Centro de Angra dos Reis − 12 km\nRio de Janeiro - 150 km\nAeroporto Internacional Tom Jobim Galeão - 112 km\nAeroporto Santos Dumond - 116 km\nParaty - 110 Km\nMangaratiba - 90 km",
-    "Restaurantes": "10 restaurantes",
-    "Estrutura de Lazer": "Piscina, Espaço Leitura, 1 quadra de futebol society, 2 quadra de tênis, 1 quadra de volêi de praia, Academia, Espaço Galera, Sala de jogos, Spa",
-    "Atrações turísticas regionais": "Ilha Grande, Lagoa Zaul e Lagoa Verde, Passeios de Barco e Ilhas, Centro Histórico, Natureza e Trilhas, Infraestrutura Turística",
-    "Principais concorrentes": "Fasano Angra dos Reis",
-    "imagem": "/images/hotels/vila-gale-eco-resort-angra.webp"
-},
-{
-    "hotel": "Vila Galé Eco Resort do Cabo",
-    "Localização": "Cabo de Santo Agostinho/PE",
-    "Quantidade de aptos": "300",
-    "Configuração dos aptos": "Standard, Superior, Família, Superior Família, Família Master, Família Superior Master, Suíte, Suíte Presidencial",
-    "Número de leitos (capacidade máxima de hóspedes)": "acima de 600",
-    "Tipos de pensão": "All Inclusive",
-    "Capacidade do maior espaço (auditório)": "700",
-    "Número de salas": "Esmeralda 1 a 3: 700 pax em auditório;\nEsmeralda 1: 250 pax em auditório;\nEsmeralda 2 e 3: 200 pax em auditório;\nAquarius 1 a 3: 500 pax em auditório;\nAquarius 1: 140 pax em auditório;\nAquarius 2: 100 pax em auditório;\nAquarius 3: 180 pax em auditório;\nÁgua Marinha 1 e 2: 130 pax em auditório\nTurmalina: 60 pax em auditório;\nAmetista: 60 pax em auditório;\nÁgata: 60 pax em auditório;\nBusiness Center: 30 pax em auditório",
-    "Principais Distâncias": "Recife − 37 km\nAeroporto Internacional de Guararapes − 40 km\nPorto de Suape − 25 km\nPorto de Galinhas − 35 Km",
-    "Restaurantes": "6 restaurantes",
-    "Estrutura de Lazer": "Piscina, Espaço Leitura, 1 quadra de futebol society, quadras de tênis, 1 quadra de volêi de praia, Academia, Spa",
-    "Atrações turísticas regionais": "Praia de Calhetas, Praia do Paiva, Praia Enseada dos Corais, Oraua di Saupe, Praia do Paiva, Igreja Nossa Senhora de Nazaré, Pedra do Xareu Beach, Praia Paraíso, Praia Gaibu",
-    "Principais concorrentes": "Mercure Recife Navegantes Hotel, El Aram, Hotel Villa Santo Agostinho",
-    "imagem": "/images/hotels/vila-gale-eco-resort-do-cabo.webp"
-},
-{
-    "hotel": "Vila Galé Fortaleza",
-    "Localização": "Fortaleza/CE",
-    "Quantidade de aptos": "300",
-    "Configuração dos aptos": "Apartamento, Apartamento Vista, Suíte, Apartamento Família",
-    "Número de leitos (capacidade máxima de hóspedes)": "acima de 600",
-    "Tipos de pensão": "Só café da manhã",
-    "Capacidade do maior espaço (auditório)": "800",
-    "Número de salas": "Iracema: 150 pax em auditório;\nVasco da Gama: 150 pax em auditório;\nFernando Pessoa: 300 pax em auditório;\nVinicius de Morais: 400 pax em auditório;\nJosé de Alencar: 400 pax em auditório;\nEça de Queiroz: 300 pax em auditório;\nTom Jobim: 50 pax em auditório;\nAmália Rodrigues: 50 pax em auditório",
-    "Principais Distâncias": "Aeroporto Internacional de Fortaleza − 16 km\nMercado Central de Fortaleza − 10 km\nBeach Park 17 km\nCentro Dragão do Mar de Arte e Cultura − 10 Km\nMuseu do Ceará 10 km\nCentro de Convenções 7,5Km",
-    "Restaurantes": "5 restaurantes",
-    "Estrutura de Lazer": "Piscina, Academia, Clube NEP, Trampolim do NEP, Espaço Galera",
-    "Atrações turísticas regionais": "Praia do Futuro, Meireles, Iracema, Centro Dragão do Mar de Arte e Cultura, Mercado Central de Fortaleza, Theatro José de Alencar, Beach Park",
-    "Principais concorrentes": "Blue Tree Towers Fortaleza, Luzeiros Fortaleza, Praiano Hotel, Gran Mareiro, Holiday Inn, Hotel Diogo, Hotel Gran Marquise",
-    "imagem": "/images/hotels/vila-gale-fortaleza.jpg"
-},
-{
-    "hotel": "Vila Galé Marés",
-    "Localização": "Camaçari/BA",
-    "Quantidade de aptos": "481",
-    "Configuração dos aptos": "Apartamento, Apartamento Família, Suíte, Suíte Família, Suíte Master, Suíte Nupcial, Chalé, Chalé Família, Chalé Superior, Chalé Master",
-    "Número de leitos (capacidade máxima de hóspedes)": "acima de 962",
-    "Tipos de pensão": "All Inclusive",
-    "Capacidade do maior espaço (auditório)": "600",
-    "Número de salas": "Salão Master Jorge Amado: 600 pax em auditório;\nSalão Master Galé: 180 pax em auditório;\nSalão Marés: 840 pax em auditório",
-    "Principais Distâncias": "Praia do Forte - 12 km\nAeroporto - 42 km\nPelourinho - 78 Km\nMercado Modelo - 80 km\nCentro de Convenções - 62 km",
-    "Restaurantes": "9 restaurantes",
-    "Estrutura de Lazer": "Piscina, Sala Teens, Sala de Jogos, 2 quadras de tênis, 1 quadra de futebol social, 1 quadra de vôlei de praia, academia e spa",
-    "Atrações turísticas regionais": "Praia de Guarajuba, Barra do Jacuípe, Itacimirim, Praia de Jauá, Rio Capivara, Praia do Forte",
-    "Principais concorrentes": "Bahia Plaza Hotel, Camaçari Plaza Hotel, Hotel Cambuci",
-    "imagem": "/images/hotels/vila-gale-mares.webp"
-},
-{
-    "hotel": "Vila Galé Paulista",
-    "Localização": "São Paulo/SP",
-    "Quantidade de aptos": "108",
-    "Configuração dos aptos": "Apartamento, Apartamento Superior, Apartamento Família, Apartamento Executivo, Apartamento Superior Executivo",
-    "Número de leitos (capacidade máxima de hóspedes)": "acima de 216",
-    "Tipos de pensão": "Só café da manhã",
-    "Capacidade do maior espaço (auditório)": "não tem",
-    "Número de salas": "-",
-    "Principais Distâncias": "Aeroporto Congonhas - 11km\nAeroporto Guarulhos - 30km\nRodoviária Barra Funda - 7km\nRodoviária Tietê - 9km",
-    "Restaurantes": "2 restaurantes",
-    "Estrutura de Lazer": "Spa, Piscina",
-    "Atrações turísticas regionais": "Fácil acesso ao Aeroporto de Congonhas, Shopping Center 3, Shopping Frei Caneca e Shopping Cidade São Paulo, Avenida Paulista",
-    "Principais concorrentes": "Melia Paulista, Intercontinental São Paulo, Grand Mercure SP, Tivoli Mofarrej, Pulmann, Ibis Styles",
-    "imagem": "/images/hotels/vila-gale-paulista.jpeg"
-},
-{
-    "hotel": "Vila Galé Rio de Janeiro",
-    "Localização": "Rio de Janeiro/RJ",
-    "Quantidade de aptos": "292",
-    "Configuração dos aptos": "Apartamento, Apartamento Família NEP, Collection Suíte Master, etc.",
-    "Número de leitos (capacidade máxima de hóspedes)": "acima 584",
-    "Tipos de pensão": "Só café da manhã",
-    "Capacidade do maior espaço (auditório)": "350",
-    "Número de salas": "Mangueira, Portela, Vila Isabel, Salgueiro, Grande Rio, Salão Master",
-    "Principais Distâncias": "Aeroporto Santos Dumont − 3 km\nMuseu do Amanhã − 6 km\nSambódromo − 2 Km\nPraia de Copacabana - 8 km",
-    "Restaurantes": "4 restaurantes",
-    "Estrutura de Lazer": "Spa, Piscina",
-    "Atrações turísticas regionais": "Cristo Redentor, Pão de Açucar, Escadaria Selarón, Jardim Botânico, Lapa",
-    "Principais concorrentes": "Rio Othon Palace, Windsor Barra, Sheraton Grand Rio",
-    "imagem": "/images/hotels/vila-gale-rio-de-janeiro.webp"
-},
-{
-    "hotel": "Vila Galé Salvador",
-    "Localização": "Salvador/BA",
-    "Quantidade de aptos": "224",
-    "Configuração dos aptos": "Apartamento, Apartamento Família, Suíte Superior",
-    "Número de leitos (capacidade máxima de hóspedes)": "acima de 448",
-    "Tipos de pensão": "Só café da manhã",
-    "Capacidade do maior espaço (auditório)": "200",
-    "Número de salas": "Pablo Neruda, Vinicius de Moraes, Tom Jobim, Noel Rosa, Ari Barroso",
-    "Principais Distâncias": "Aeroporto de Salvador − 27 km\nPelourinho − 8 km\nFarol da Barra - 4 km",
-    "Restaurantes": "4 restaurantes",
-    "Estrutura de Lazer": "Spa, Piscina",
-    "Atrações turísticas regionais": "Pelourinho, Elevador Lacerda, Mercado Modelo, Farol da Barra, Igreja do Bonfim",
-    "Principais concorrentes": "ibis budget, Novotel, Mercure, Deville Prime, Fera Palace",
-    "imagem": "/images/hotels/vila-gale-salvador.webp"
-},
-{
-    "hotel": "Vila Galé Touros",
-    "Localização": "Touros/RN",
-    "Quantidade de aptos": "514",
-    "Configuração dos aptos": "Apartamento, Suíte, Chalé",
-    "Número de leitos (capacidade máxima de hóspedes)": "acima de 1.024",
-    "Tipos de pensão": "All Inclusive",
-    "Capacidade do maior espaço (auditório)": "1200",
-    "Número de salas": "Master, Foyer, Cumbuco, Marés, Salvador, Fortaleza",
-    "Principais Distâncias": "Natal − 79 km\nAeroporto Internacional de Natal − 89 km\nSão Miguel do Gostoso − 47 Km",
-    "Restaurantes": "9 restaurantes",
-    "Estrutura de Lazer": "Piscina, 1 quadra polidesportiva, Tênis, Futebol, Vôlei de praia, Academia, Spa",
-    "Atrações turísticas regionais": "Parrachos de Perobás, São Miguel do Gostoso, Farol do Calcanhar",
-    "Principais concorrentes": "Serhs Natal, Wish Natal",
-    "imagem": "/images/hotels/vila-gale-touros.jpg"
-},
-{
-    "hotel": "Vila Galé Collection Amazônia",
-    "Localização": "Belém/PA",
-    "Quantidade de aptos": "227",
-    "Configuração dos aptos": "Apartamento, Apartamento Familiar, Suíte Premium",
-    "Número de leitos (capacidade máxima de hóspedes)": "acima 454",
-    "Tipos de pensão": "Só café da manhã",
-    "Capacidade do maior espaço (auditório)": "450",
-    "Número de salas": "Sala Master Carlos Gomes: 450 pax em auditório",
-    "Principais Distâncias": "Aeroporto Internacional de Belém - 12km\nEstação das Docas - 1km\nMercado Ver-o-Peso - 1.5km",
-    "Restaurantes": "2 restaurantes",
-    "Estrutura de Lazer": "Spa, Piscina",
-    "Atrações turísticas regionais": "Mercado Ver-o-Peso, Estação das Docas, Forte do Presépio, Catedral da Sé, Mangal das Garças",
-    "Principais concorrentes": "Grand Mercure Belém, Radisson Belém",
-    "imagem": "/images/hotels/vila-gale-collection-amazonia.jpg"
-},
-{
-    "hotel": "Vila Galé Ouro Preto",
-    "Localização": "Ouro Preto/MG",
-    "Quantidade de aptos": "311",
-    "Configuração dos aptos": "Apartamento, Apartamento Premium, Suíte",
-    "Número de leitos (capacidade máxima de hóspedes)": "acima de 622",
-    "Tipos de pensão": "Só café da manhã",
-    "Capacidade do maior espaço (auditório)": "500",
-    "Número de salas": "Salão Master Tiradentes: 500 pax em auditório",
-    "Principais Distâncias": "Belo Horizonte - 96km\nAeroporto Confins - 140km",
-    "Restaurantes": "2 restaurantes",
-    "Estrutura de Lazer": "Piscina, Academia, Spa",
-    "Atrações turísticas regionais": "Museu da Inconfidência, Praça Tiradentes, Igreja São Francisco de Assis, Minas de Ouro",
-    "Principais concorrentes": "Solar do Rosário, Pousada do Mondego",
-    "imagem": "/images/hotels/vila-gale-ouro-preto.webp"
-},
-{
-    "hotel": "Intercity Portofino",
-    "Localização": "Florianópolis/SC",
-    "Quantidade de aptos": "140",
-    "Configuração dos aptos": "Premium, Standard, Suíte",
-    "Número de leitos (capacidade máxima de hóspedes)": "acima de 280",
-    "Tipos de pensão": "Só café da manhã",
-    "Capacidade do maior espaço (auditório)": "250",
-    "Número de salas": "3 salas",
-    "Principais Distâncias": "Aeroporto - 20km\nCentro - 10km",
-    "Restaurantes": "1 restaurante",
-    "Estrutura de Lazer": "Piscina térmica, Fitness center",
-    "Atrações turísticas regionais": "Floripa Shopping, Praias do Norte",
-    "Principais concorrentes": "Mercure Florianópolis",
-    "imagem": "/images/hotels/intercity-portofino.webp"
-},
-{
-    "hotel": "Intercity Centro",
-    "Localização": "Florianópolis/SC",
-    "Quantidade de aptos": "122",
-    "Configuração dos aptos": "Standard, Luxo, Suíte",
-    "Número de leitos (capacidade máxima de hóspedes)": "acima de 244",
-    "Tipos de pensão": "Só café da manhã",
-    "Capacidade do maior espaço (auditório)": "150",
-    "Número de salas": "2 salas",
-    "Principais Distâncias": "Aeroporto - 12km\nCentro - 0km",
-    "Restaurantes": "1 restaurante",
-    "Estrutura de Lazer": "Piscina, Fitness center",
-    "Atrações turísticas regionais": "Mercado Público, Ponte Hercílio Luz",
-    "Principais concorrentes": "Blue Tree Florianópolis",
-    "imagem": "/images/hotels/intercity-centro.webp"
-},
-{
-    "hotel": "Sibara",
-    "Localização": "Balneário Camboriú/SC",
-    "Quantidade de aptos": "267",
-    "Configuração dos aptos": "Econômico, Superior, Flat, Suíte Master",
-    "Número de leitos (capacidade máxima de hóspedes)": "809",
-    "Tipos de pensão": "Só café da manhã",
-    "Capacidade do maior espaço (auditório)": "1200",
-    "Número de salas": "12 salas",
-    "Principais Distâncias": "Aeroporto Navegantes - 34km\nBeto Carrero - 38km",
-    "Restaurantes": "1 restaurante",
-    "Estrutura de Lazer": "Piscina, Sauna, Sala de jogos",
-    "Atrações turísticas regionais": "Praia Central, Parque Unipraias, Roda Gigante",
-    "Principais concorrentes": "Infinity Blue, Mercure Camboriú",
-    "imagem": "/images/hotels/sibara.jpg"
-}
+    {
+        "hotel": "Royal Palm Plaza",
+        "Localização": "Campinas / SP",
+        "Quantidade de aptos": "430",
+        "Configuração dos aptos": "SGL, DBL, TPL",
+        "Número de leitos (capacidade máxima de hóspedes)": "1100",
+        "Tipos de pensão": "Café da manhã\nPensão completa*\n*Observando a capacidade do restaurante, pode ser necessário realizar as refeições no Hall.",
+        "Principais Distâncias": "16 Km do Aeroporto Internacional de Viracopos (15 minutos)\n90 km do Centro de São Paulo\n110 Km do Aeroporto Internacional de Guarulhos\n5 Km do Centro de Campinas",
+        "Restaurantes": "Vila Royal: 330 pax\nTerraço Gourmet: 300 pax\nLa Palette: 44 pax\nAdega Cave do Ouro: 40 pax",
+        "Estrutura de Lazer": "2 bares, café gourmet, 5 piscinas, 2 playgrounds aquáticos, Spa, Miniville, Kata Kuka, 4 quadras de tênis, campo de futebol society, ginásio poliesportivo e fitness center",
+        "Atrações turísticas regionais": "Bares, botecos, casas de shows. Mercado Municipal, Observatório Municipal de Campinas Jean Nicolini, Catedral Metropolitana de Campinas, Bosque dos Jequitibás. Zoo de Americana, Outlet Premium e Wet'n Wild em Itupeva. Holambra, capital nacional das flores.",
+        "Principais concorrentes": "Bourbon Atibaia",
+        "imagem": "/images/hotels/royal-palm-plaza.webp",
+        "salas": [
+            {
+                "nome": "Imperial (10 mód.)",
+                "pax": 1100,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Casa de Campo",
+                "pax": 900,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Paço dos Nobres (4 mód.)",
+                "pax": 420,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Arena de Pedra",
+                "pax": 160,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Infante Dom Henrique",
+                "pax": 130,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Dom Pedro (4 mód.)",
+                "pax": 120,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Dom João (3 mód.)",
+                "pax": 90,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Lumini (cinema)",
+                "pax": 70,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Sala de apoio A",
+                "pax": 30,
+                "tipo": "apoio"
+            },
+            {
+                "nome": "Sala de apoio B",
+                "pax": 24,
+                "tipo": "apoio"
+            },
+            {
+                "nome": "Sala de apoio C",
+                "pax": 24,
+                "tipo": "apoio"
+            },
+            {
+                "nome": "Sala de apoio D",
+                "pax": 15,
+                "tipo": "apoio"
+            },
+            {
+                "nome": "Sala de apoio E",
+                "pax": 15,
+                "tipo": "apoio"
+            },
+            {
+                "nome": "Boardroom A",
+                "pax": 18,
+                "tipo": "boardroom"
+            },
+            {
+                "nome": "Boardroom B",
+                "pax": 12,
+                "tipo": "boardroom"
+            },
+            {
+                "nome": "Foyer Imperial",
+                "pax": 800,
+                "tipo": "coquetel"
+            },
+            {
+                "nome": "Varanda Casa de Campo",
+                "pax": 550,
+                "tipo": "coquetel"
+            },
+            {
+                "nome": "Foyer Paço dos Nobres",
+                "pax": 250,
+                "tipo": "coquetel"
+            },
+            {
+                "nome": "Foyer Infante Dom Henrique",
+                "pax": 100,
+                "tipo": "coquetel"
+            }
+        ]
+    },
+    {
+        "hotel": "Royal Palm Tower Anhanguera",
+        "Localização": "Campinas / SP",
+        "Quantidade de aptos": "190",
+        "Configuração dos aptos": "SGL, DBL",
+        "Número de leitos (capacidade máxima de hóspedes)": "380",
+        "Tipos de pensão": "Café da manhã\nPensão completa*\n*Observando a capacidade do restaurante, pode ser necessário realizar as refeições no Hall.",
+        "Principais Distâncias": "16 Km do Aeroporto Internacional de Viracopos (15 minutos)\n90 km do Centro de São Paulo\n110 Km do Aeroporto Internacional de Guarulhos\n5 Km do Centro de Campinas",
+        "Restaurantes": "1 (capacidade 240 pax)",
+        "Estrutura de Lazer": "Lobby bar, fitness center, piscina e sauna",
+        "Atrações turísticas regionais": "Bares, botecos, casas de shows. Mercado Municipal, Observatório Municipal de Campinas Jean Nicolini, Catedral Metropolitana de Campinas, Bosque dos Jequitibás. Zoo de Americana, Outlet Premium e Wet'n Wild em Itupeva. Holambra, capital nacional das flores.",
+        "Principais concorrentes": "Radisson Red Campinas\nVitória Concept\nRamada\nMeliã Campinas",
+        "imagem": "/images/hotels/royal-palm-tower-anhanguera.webp",
+        "salas": [
+            {
+                "nome": "Salão Anhanguera (3 mód.) + Foyer",
+                "pax": 600,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Sala Flamboyant",
+                "pax": 40,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Sala Figueira",
+                "pax": 40,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Foyer",
+                "pax": 200,
+                "tipo": "coquetel"
+            }
+        ]
+    },
+    {
+        "hotel": "Hotel Contemporâneo",
+        "Localização": "Campinas / SP",
+        "Quantidade de aptos": "280",
+        "Configuração dos aptos": "SGL, DBL",
+        "Número de leitos (capacidade máxima de hóspedes)": "560",
+        "Tipos de pensão": "Café da manhã\nPensão completa*\n*Observando a capacidade do restaurante, pode ser necessário realizar as refeições no Hall.",
+        "Principais Distâncias": "16 Km do Aeroporto Internacional de Viracopos (15 minutos)\n90 km do Centro de São Paulo\n110 Km do Aeroporto Internacional de Guarulhos\n5 Km do Centro de Campinas",
+        "Restaurantes": "1 self-service (capacidade 250 pax)",
+        "Estrutura de Lazer": "-",
+        "Atrações turísticas regionais": "Bares, botecos, casas de shows. Mercado Municipal, Observatório Municipal de Campinas Jean Nicolini, Catedral Metropolitana de Campinas, Bosque dos Jequitibás. Zoo de Americana, Outlet Premium e Wet'n Wild em Itupeva. Holambra, capital nacional das flores.",
+        "Principais concorrentes": "Go Inn Campinas\nIbis Campinas\nRio Hotel by Bourbon\nCampinas\nSleep Inn Galleria",
+        "imagem": "/images/hotels/hotel-contemporaneo.webp",
+        "salas": []
+    },
+    {
+        "hotel": "Royal Palm Hall",
+        "Localização": "Campinas / SP",
+        "Quantidade de aptos": "Anhanguera + Plaza + Contemporâneo*",
+        "Configuração dos aptos": "-",
+        "Número de leitos (capacidade máxima de hóspedes)": "-",
+        "Tipos de pensão": "-",
+        "Principais Distâncias": "16 Km do Aeroporto Internacional de Viracopos (15 minutos)\n90 km do Centro de São Paulo\n110 Km do Aeroporto Internacional de Guarulhos\n5 Km do Centro de Campinas",
+        "Restaurantes": "-",
+        "Estrutura de Lazer": "-",
+        "Atrações turísticas regionais": "Bares, botecos, casas de shows. Mercado Municipal, Observatório Municipal de Campinas Jean Nicolini, Catedral Metropolitana de Campinas, Bosque dos Jequitibás. Zoo de Americana, Outlet Premium e Wet'n Wild em Itupeva. Holambra, capital nacional das flores.",
+        "Principais concorrentes": "-",
+        "imagem": "/images/hotels/royal-palm-hall.jpg",
+        "salas": [
+            {
+                "nome": "Salão Monumental (7 mód.)",
+                "pax": 5000,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Sala Campinas",
+                "pax": 600,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Sala Paineiras (3 mód.)",
+                "pax": 140,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Piso Buriti — sala master",
+                "pax": 120,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Sala Jatobá (3 mód.)",
+                "pax": 70,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Piso Buriti (4 salas)",
+                "pax": 80,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Piso Jacarandá — salas grandes (2)",
+                "pax": 70,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Piso Jacarandá (12 salas)",
+                "pax": 55,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Piso Laranjeira (14 salas)",
+                "pax": 36,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Foyers (3)",
+                "pax": 1300,
+                "tipo": "coquetel"
+            },
+            {
+                "nome": "Foyer Campinas B",
+                "pax": 850,
+                "tipo": "coquetel"
+            },
+            {
+                "nome": "Foyer Campinas A",
+                "pax": 500,
+                "tipo": "coquetel"
+            },
+            {
+                "nome": "Salão de Exposições",
+                "pax": 0,
+                "tipo": "outro"
+            }
+        ]
+    },
+    {
+        "hotel": "Royal Palm Tower Indaiatuba",
+        "Localização": "Indaiatuba / SP",
+        "Quantidade de aptos": "190",
+        "Configuração dos aptos": "SGL, DBL",
+        "Número de leitos (capacidade máxima de hóspedes)": "280",
+        "Tipos de pensão": "Café da manhã\nPensão completa",
+        "Principais Distâncias": "19 Km do Aeroporto de Viracopos (15 minutos)\n114 Km do Aeroporto de Congonhas\n126 Km Aeroporto Internacional de Guarulhos\n100 Km de São Paulo (capital)\n51 km da Rodovia Santos\n25 Km de Campinas ou Itu\n58 Km de Sorocaba\n80 Km de Piracicaba",
+        "Restaurantes": "1 (capacidade 160 pax)",
+        "Estrutura de Lazer": "Lobby bar, cobertura com fitness center, sauna e psicina de hidromassagem",
+        "Atrações turísticas regionais": "Bares, botecos, casas de shows. Mercado Municipal, Observatório Municipal de Campinas Jean Nicolini, Catedral Metropolitana de Campinas, Bosque dos Jequitibás. Zoo de Americana, Outlet Premium e Wet'n Wild em Itupeva. Holambra, capital nacional das flores.",
+        "Principais concorrentes": "Vitória Hotel Convention Indaiatuba\nTravel Inn Wise Indaiatuba\nRamada by WyndhamCampinas Viracopos\nMeliã Campinas",
+        "imagem": "/images/hotels/royal-palm-tower-indaiatuba.jpg",
+        "salas": [
+            {
+                "nome": "Salão Santos Dumont (4 mód.)",
+                "pax": 450,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Suíte executiva A",
+                "pax": 0,
+                "tipo": "apoio"
+            },
+            {
+                "nome": "Suíte executiva B",
+                "pax": 0,
+                "tipo": "apoio"
+            },
+            {
+                "nome": "Suíte executiva C",
+                "pax": 0,
+                "tipo": "apoio"
+            },
+            {
+                "nome": "Suíte executiva D",
+                "pax": 0,
+                "tipo": "apoio"
+            },
+            {
+                "nome": "Suíte executiva E",
+                "pax": 0,
+                "tipo": "apoio"
+            },
+            {
+                "nome": "Suíte executiva F",
+                "pax": 0,
+                "tipo": "apoio"
+            },
+            {
+                "nome": "Foyer",
+                "pax": 150,
+                "tipo": "coquetel"
+            }
+        ]
+    },
+    {
+        "hotel": "Oceania Park Hotel e Convention Center",
+        "Localização": "Praia dos Ingleses, Florianópolis / SC",
+        "Quantidade de aptos": "82",
+        "Configuração dos aptos": "SGL, DBL, TPL, QDL",
+        "Número de leitos (capacidade máxima de hóspedes)": "328",
+        "Tipos de pensão": "Café da manhã\nMeia pensão\nPensão completa",
+        "Principais Distâncias": "42 Km do Aeroporto de Florianópolis (45 minutos)\n30 Km do Centro de Florianópolis",
+        "Restaurantes": "1 (capacidade 80 pax)",
+        "Estrutura de Lazer": "Lounge bar, saunas, 2 piscinas, bar à beira da piscina, espaço para crianças, quadra de\ntênis, campo de futebol, quadras de vôlei de praia, futevôlei e beach tennis, área interna de jogos com sinuca.",
+        "Atrações turísticas regionais": "Praia dos Ingleses, passeios em Santo Antônio de Lisboa, Praia de Jurerê, Praia do Forte, Praia dos Ingleses, Praia do Santinho e Canasvieiras.",
+        "Principais concorrentes": "Il Campanário\nCostão do Santinho\nJurerê Beach Village",
+        "imagem": "/images/hotels/oceania-park-hotel.jpg",
+        "salas": [
+            {
+                "nome": "Sala Diamante",
+                "pax": 2000,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Salas Ágata + Topázio (4 mód.)",
+                "pax": 620,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Mezanino",
+                "pax": 300,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Sala Esmeralda (2 mód.)",
+                "pax": 300,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Sala hotel A",
+                "pax": 100,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Sala hotel B",
+                "pax": 80,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Foyer",
+                "pax": 500,
+                "tipo": "banquete"
+            }
+        ]
+    },
+    {
+        "hotel": "Iate Hotel",
+        "Localização": "Centro, Florianópolis/SC",
+        "Quantidade de aptos": "83",
+        "Configuração dos aptos": "SGL, DBL, TPL",
+        "Número de leitos (capacidade máxima de hóspedes)": "259",
+        "Tipos de pensão": "Café da manhã\nMeia pensão\nPensão completa",
+        "Principais Distâncias": "9 Km do Aeroporto de Florianópolis (10 minutos)\n500 m do Centro de Florianópolis\n900 m do Centrosul (3 minutos)",
+        "Restaurantes": "1 (capacidade 90 pax)",
+        "Estrutura de Lazer": "Bar e academia",
+        "Atrações turísticas regionais": "Ponte Hercílio Luz, Mercado Público, Catedral Metropolitana, Palácio Cruz e Sousa, Praça XV de Novembro, Museu Casa de Câmara e Cadeia, Prédio da Casa de Alfândega, Avenida Beira Mar Norte.",
+        "Principais concorrentes": "Intercity\nFlorianópolis Palace Hotel / Rede Andrade Floph\nFaial Prime Suites",
+        "imagem": "/images/hotels/iate-hotel.avif",
+        "salas": [
+            {
+                "nome": "Sala B",
+                "pax": 120,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Sala A",
+                "pax": 100,
+                "tipo": "auditório"
+            }
+        ]
+    },
+    {
+        "hotel": "Hotel 7",
+        "Localização": "Itajaí/SC",
+        "Quantidade de aptos": "50",
+        "Configuração dos aptos": "SGL, DBL + cama extra",
+        "Número de leitos (capacidade máxima de hóspedes)": "101",
+        "Tipos de pensão": "Café da manhã",
+        "Principais Distâncias": "5,9km do aeroporto de Navegantes; \n800m do Centro de Eventos Marejada;",
+        "Restaurantes": "-",
+        "Estrutura de Lazer": "-",
+        "Atrações turísticas regionais": "Praia Brava, Praia de Cabeçudas, Catedral, Mercado Público, Morro da Cruz, Porto, Parque Aquático Zacarias, Marina, Museu Histórico, Mole, Centreventos, Shopping, Beira Rio",
+        "Principais concorrentes": "Hotel Ibis\nHotel Sandri",
+        "imagem": "/images/hotels/hotel-7.webp",
+        "salas": [
+            {
+                "nome": "Sala Mar",
+                "pax": 60,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Sala Terra",
+                "pax": 20,
+                "tipo": "auditório"
+            }
+        ]
+    },
+    {
+        "hotel": "Vila Galé Alagoas",
+        "Localização": "Barra Santo Antonio/AL",
+        "Quantidade de aptos": "513",
+        "Configuração dos aptos": "Standard, Família, NEP, Superior, Superior Família, Suíte, Suíte Família, Chalé, Chalé NEP, Chalé Superior e Chalé Master",
+        "Número de leitos (capacidade máxima de hóspedes)": "acima de 1.026",
+        "Tipos de pensão": "All Inclusive",
+        "Principais Distâncias": "Maceió − 48 km\nAeroporto Internacional de Maceió − 62 km",
+        "Restaurantes": "7 restaurantes",
+        "Estrutura de Lazer": "Piscina, Parque Aquático, 1 quadra poliesportiva, 1 quadra de tênis, 1 quadra de futebol de areia, 1 quadra de volêi de praia e beach tennis, Academia, Espaço Galera, Sala de jogos, Spa",
+        "Atrações turísticas regionais": "Piscinas naturais de Pajuçara, Orla de Ponta Verde, Praia de Ipioca, Feirinha de Artesanato da Pajuçara, Barracas de Praia",
+        "Principais concorrentes": "Maceio Mar Hotel, Jatiúca Hotel e Resort, Hotel Ritz Lagoa da Anta, Matsubara Hotel",
+        "imagem": "/images/hotels/vila-gale-alagoas.webp",
+        "salas": [
+            {
+                "nome": "Master",
+                "pax": 1200,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Foyer",
+                "pax": 700,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Fernando Pessoa",
+                "pax": 60,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Eça de Queiroz",
+                "pax": 48,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Jorge Amado",
+                "pax": 40,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Carlos Drummond de Andrade",
+                "pax": 40,
+                "tipo": "auditório"
+            }
+        ]
+    },
+    {
+        "hotel": "Vila Galé Cumbuco",
+        "Localização": "Caucaia/CE",
+        "Quantidade de aptos": "537",
+        "Configuração dos aptos": "Standard, Superior, Família, Suíte, Suíte Família, Suíte Junior, Chalé, Chalé Família, Chalé Superior e Chalé Master",
+        "Número de leitos (capacidade máxima de hóspedes)": "acima de 1.074",
+        "Tipos de pensão": "All Inclusive",
+        "Principais Distâncias": "Caucaia − 24 km\nAeroporto de Fortaleza − 45 km\nVila Galé Fortaleza − 50 km\nCentro de Fortaleza − 33 Km",
+        "Restaurantes": "6 restaurantes",
+        "Estrutura de Lazer": "Piscina, Biblioteca, 1 quadra poliesportiva, 1 quadra de tênis, 1 quadra de volêi de praia, 1 quadra de beach tennis, Academia, Espaço Galera, Sala de jogos, Spa",
+        "Atrações turísticas regionais": "Praias urbanas como a Praia do Futuro (ideal para banho e barracas estruturadas), Meireles (feirinha de artesanato) e Iracema (ponte dos ingleses). Destacam-se também o complexo cultural Dragão do Mar, o Mercado Central, o Theatro José de Alencar e o famoso parque aquático Beach Park, localizado na vizinha Aquiraz. ",
+        "Principais concorrentes": "Beach Park, Hotel Parque das Fontes, Hotel Gran Marquise, Dom Pedro Laguna, Carmel Hotéis",
+        "imagem": "/images/hotels/vila-gale-cumbuco.webp",
+        "salas": [
+            {
+                "nome": "Marés",
+                "pax": 450,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Salvador",
+                "pax": 200,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Cumbuco",
+                "pax": 150,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Fortaleza",
+                "pax": 30,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Angra",
+                "pax": 30,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Tavira",
+                "pax": 30,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Albacora",
+                "pax": 30,
+                "tipo": "auditório"
+            }
+        ]
+    },
+    {
+        "hotel": "Vila Galé Eco Resort Angra",
+        "Localização": "Angra dos Reis/RJ",
+        "Quantidade de aptos": "321",
+        "Configuração dos aptos": "Standard, Superior, Família, Superior Família, Suíte, Suíte Superior",
+        "Número de leitos (capacidade máxima de hóspedes)": "acima de 642",
+        "Tipos de pensão": "All Inclusive",
+        "Principais Distâncias": "Centro de Angra dos Reis − 12 km\nRio de Janeiro - 150 km\nAeroporto Internacional Tom Jobim Galeão - 112 km\nAeroporto Santos Dumond - 116 km\nParaty - 110 Km\nMangaratiba - 90 km",
+        "Restaurantes": "10 restaurantes",
+        "Estrutura de Lazer": "Piscina, Espaço Leitura, 1 quadra de futebol society, 2 quadra de tênis, 1 quadra de volêi de praia, Academia, Espaço Galera, Sala de jogos, Spa",
+        "Atrações turísticas regionais": "Ilha Grande, Lagoa Zaul e Lagoa Verde, Passeios de Barco e Ilhas, Centro Histórico, Natureza e Trilhas, Infraestrutura Turística",
+        "Principais concorrentes": "Fasano Angra dos Reis",
+        "imagem": "/images/hotels/vila-gale-eco-resort-angra.webp",
+        "salas": [
+            {
+                "nome": "Ballroom",
+                "pax": 1500,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Ballroom Enseada",
+                "pax": 400,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Brisa 3",
+                "pax": 230,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Centauro 1",
+                "pax": 230,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Centauro 2",
+                "pax": 230,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Centauro 3",
+                "pax": 230,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Brisa 1",
+                "pax": 168,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Brisa 2",
+                "pax": 168,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Enseada 5",
+                "pax": 110,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Enseada 1",
+                "pax": 50,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Enseada 2",
+                "pax": 50,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Enseada 3",
+                "pax": 50,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Enseada 4",
+                "pax": 50,
+                "tipo": "auditório"
+            }
+        ]
+    },
+    {
+        "hotel": "Vila Galé Eco Resort do Cabo",
+        "Localização": "Cabo de Santo Agostinho/PE",
+        "Quantidade de aptos": "300",
+        "Configuração dos aptos": "Standard, Superior, Família, Superior Família, Família Master, Família Superior Master, Suíte, Suíte Presidencial",
+        "Número de leitos (capacidade máxima de hóspedes)": "acima de 600",
+        "Tipos de pensão": "All Inclusive",
+        "Principais Distâncias": "Recife − 37 km\nAeroporto Internacional de Guararapes − 40 km\nPorto de Suape − 25 km\nPorto de Galinhas − 35 Km",
+        "Restaurantes": "6 restaurantes",
+        "Estrutura de Lazer": "Piscina, Espaço Leitura, 1 quadra de futebol society, quadras de tênis, 1 quadra de volêi de praia, Academia, Spa",
+        "Atrações turísticas regionais": "Praia de Calhetas, Praia do Paiva, Praia Enseada dos Corais, Oraua di Saupe, Praia do Paiva, Igreja Nossa Senhora de Nazaré, Pedra do Xareu Beach, Praia Paraíso, Praia Gaibu",
+        "Principais concorrentes": "Mercure Recife Navegantes Hotel, El Aram, Hotel Villa Santo Agostinho",
+        "imagem": "/images/hotels/vila-gale-eco-resort-do-cabo.webp",
+        "salas": [
+            {
+                "nome": "Esmeralda (1+2+3)",
+                "pax": 700,
+                "tipo": "configuração"
+            },
+            {
+                "nome": "Aquarius (1+2+3)",
+                "pax": 500,
+                "tipo": "configuração"
+            },
+            {
+                "nome": "Esmeralda 1",
+                "pax": 250,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Aquarius 3",
+                "pax": 180,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Esmeralda 2",
+                "pax": 200,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Esmeralda 3",
+                "pax": 200,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Aquarius 1",
+                "pax": 140,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Água Marinha (1+2)",
+                "pax": 130,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Aquarius 2",
+                "pax": 100,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Turmalina",
+                "pax": 60,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Ametista",
+                "pax": 60,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Ágata",
+                "pax": 60,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Business Center",
+                "pax": 30,
+                "tipo": "boardroom"
+            }
+        ]
+    },
+    {
+        "hotel": "Vila Galé Fortaleza",
+        "Localização": "Fortaleza/CE",
+        "Quantidade de aptos": "300",
+        "Configuração dos aptos": "Apartamento, Apartamento Vista, Suíte, Apartamento Família",
+        "Número de leitos (capacidade máxima de hóspedes)": "acima de 600",
+        "Tipos de pensão": "Só café da manhã",
+        "Principais Distâncias": "Aeroporto Internacional de Fortaleza − 16 km\nMercado Central de Fortaleza − 10 km\nBeach Park 17 km\nCentro Dragão do Mar de Arte e Cultura − 10 Km\nMuseu do Ceará 10 km\nCentro de Convenções 7,5Km",
+        "Restaurantes": "5 restaurantes",
+        "Estrutura de Lazer": "Piscina, Academia, Clube NEP, Trampolim do NEP, Espaço Galera",
+        "Atrações turísticas regionais": "Praia do Futuro, Meireles, Iracema, Centro Dragão do Mar de Arte e Cultura, Mercado Central de Fortaleza, Theatro José de Alencar, Beach Park",
+        "Principais concorrentes": "Blue Tree Towers Fortaleza, Luzeiros Fortaleza, Praiano Hotel, Gran Mareiro, Holiday Inn, Hotel Diogo, Hotel Gran Marquise",
+        "imagem": "/images/hotels/vila-gale-fortaleza.jpg",
+        "salas": [
+            {
+                "nome": "Vinicius de Morais + José de Alencar",
+                "pax": 800,
+                "tipo": "configuração"
+            },
+            {
+                "nome": "Vinicius de Morais",
+                "pax": 400,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "José de Alencar",
+                "pax": 400,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Fernando Pessoa",
+                "pax": 300,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Eça de Queiroz",
+                "pax": 300,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Iracema",
+                "pax": 150,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Vasco da Gama",
+                "pax": 150,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Tom Jobim",
+                "pax": 50,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Amália Rodrigues",
+                "pax": 50,
+                "tipo": "auditório"
+            }
+        ]
+    },
+    {
+        "hotel": "Vila Galé Marés",
+        "Localização": "Camaçari/BA",
+        "Quantidade de aptos": "481",
+        "Configuração dos aptos": "Apartamento, Apartamento Família, Suíte, Suíte Família, Suíte Master, Suíte Nupcial, Chalé, Chalé Família, Chalé Superior, Chalé Master",
+        "Número de leitos (capacidade máxima de hóspedes)": "acima de 962",
+        "Tipos de pensão": "All Inclusive",
+        "Principais Distâncias": "Praia do Forte - 12 km\nAeroporto - 42 km\nPelourinho - 78 Km\nMercado Modelo - 80 km\nCentro de Convenções - 62 km",
+        "Restaurantes": "9 restaurantes",
+        "Estrutura de Lazer": "Piscina, Sala Teens, Sala de Jogos, 2 quadras de tênis, 1 quadra de futebol social, 1 quadra de vôlei de praia, academia e spa",
+        "Atrações turísticas regionais": "Praia de Guarajuba, Barra do Jacuípe, Itacimirim, Praia de Jauá, Rio Capivara, Praia do Forte",
+        "Principais concorrentes": "Bahia Plaza Hotel, Camaçari Plaza Hotel, Hotel Cambuci",
+        "imagem": "/images/hotels/vila-gale-mares.webp",
+        "salas": [
+            {
+                "nome": "Salão Marés",
+                "pax": 840,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Salão Master Jorge Amado",
+                "pax": 600,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Salão Master Galé",
+                "pax": 180,
+                "tipo": "auditório"
+            }
+        ]
+    },
+    {
+        "hotel": "Vila Galé Paulista",
+        "Localização": "São Paulo/SP",
+        "Quantidade de aptos": "108",
+        "Configuração dos aptos": "Apartamento, Apartamento Superior, Apartamento Família, Apartamento Executivo, Apartamento Superior Executivo",
+        "Número de leitos (capacidade máxima de hóspedes)": "acima de 216",
+        "Tipos de pensão": "Só café da manhã",
+        "Principais Distâncias": "Aeroporto Congonhas - 11km\nAeroporto Guarulhos - 30km\nRodoviária Barra Funda - 7km\nRodoviária Tietê - 9km",
+        "Restaurantes": "2 restaurantes",
+        "Estrutura de Lazer": "Spa, Piscina",
+        "Atrações turísticas regionais": "Fácil acesso ao Aeroporto de Congonhas, Shopping Center 3, Shopping Frei Caneca e Shopping Cidade São Paulo, Avenida Paulista",
+        "Principais concorrentes": "Melia Paulista, Intercontinental São Paulo, Grand Mercure SP, Tivoli Mofarrej, Pulmann, Ibis Styles",
+        "imagem": "/images/hotels/vila-gale-paulista.jpeg",
+        "salas": []
+    },
+    {
+        "hotel": "Vila Galé Rio de Janeiro",
+        "Localização": "Rio de Janeiro/RJ",
+        "Quantidade de aptos": "292",
+        "Configuração dos aptos": "Apartamento, Apartamento Família NEP, Collection Suíte Master, etc.",
+        "Número de leitos (capacidade máxima de hóspedes)": "acima 584",
+        "Tipos de pensão": "Só café da manhã",
+        "Principais Distâncias": "Aeroporto Santos Dumont − 3 km\nMuseu do Amanhã − 6 km\nSambódromo − 2 Km\nPraia de Copacabana - 8 km",
+        "Restaurantes": "4 restaurantes",
+        "Estrutura de Lazer": "Spa, Piscina",
+        "Atrações turísticas regionais": "Cristo Redentor, Pão de Açucar, Escadaria Selarón, Jardim Botânico, Lapa",
+        "Principais concorrentes": "Rio Othon Palace, Windsor Barra, Sheraton Grand Rio",
+        "imagem": "/images/hotels/vila-gale-rio-de-janeiro.webp",
+        "salas": [
+            {
+                "nome": "Salão Master",
+                "pax": 350,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Mangueira",
+                "pax": 0,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Portela",
+                "pax": 0,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Vila Isabel",
+                "pax": 0,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Salgueiro",
+                "pax": 0,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Grande Rio",
+                "pax": 0,
+                "tipo": "auditório"
+            }
+        ]
+    },
+    {
+        "hotel": "Vila Galé Salvador",
+        "Localização": "Salvador/BA",
+        "Quantidade de aptos": "224",
+        "Configuração dos aptos": "Apartamento, Apartamento Família, Suíte Superior",
+        "Número de leitos (capacidade máxima de hóspedes)": "acima de 448",
+        "Tipos de pensão": "Só café da manhã",
+        "Principais Distâncias": "Aeroporto de Salvador − 27 km\nPelourinho − 8 km\nFarol da Barra - 4 km",
+        "Restaurantes": "4 restaurantes",
+        "Estrutura de Lazer": "Spa, Piscina",
+        "Atrações turísticas regionais": "Pelourinho, Elevador Lacerda, Mercado Modelo, Farol da Barra, Igreja do Bonfim",
+        "Principais concorrentes": "ibis budget, Novotel, Mercure, Deville Prime, Fera Palace",
+        "imagem": "/images/hotels/vila-gale-salvador.webp",
+        "salas": [
+            {
+                "nome": "Pablo Neruda",
+                "pax": 200,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Vinicius de Moraes",
+                "pax": 0,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Tom Jobim",
+                "pax": 0,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Noel Rosa",
+                "pax": 0,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Ari Barroso",
+                "pax": 0,
+                "tipo": "auditório"
+            }
+        ]
+    },
+    {
+        "hotel": "Vila Galé Touros",
+        "Localização": "Touros/RN",
+        "Quantidade de aptos": "514",
+        "Configuração dos aptos": "Apartamento, Suíte, Chalé",
+        "Número de leitos (capacidade máxima de hóspedes)": "acima de 1.024",
+        "Tipos de pensão": "All Inclusive",
+        "Principais Distâncias": "Natal − 79 km\nAeroporto Internacional de Natal − 89 km\nSão Miguel do Gostoso − 47 Km",
+        "Restaurantes": "9 restaurantes",
+        "Estrutura de Lazer": "Piscina, 1 quadra polidesportiva, Tênis, Futebol, Vôlei de praia, Academia, Spa",
+        "Atrações turísticas regionais": "Parrachos de Perobás, São Miguel do Gostoso, Farol do Calcanhar",
+        "Principais concorrentes": "Serhs Natal, Wish Natal",
+        "imagem": "/images/hotels/vila-gale-touros.jpg",
+        "salas": [
+            {
+                "nome": "Master",
+                "pax": 1200,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Cumbuco",
+                "pax": 0,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Marés",
+                "pax": 0,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Salvador",
+                "pax": 0,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Fortaleza",
+                "pax": 0,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Foyer",
+                "pax": 0,
+                "tipo": "coquetel"
+            }
+        ]
+    },
+    {
+        "hotel": "Vila Galé Collection Amazônia",
+        "Localização": "Belém/PA",
+        "Quantidade de aptos": "227",
+        "Configuração dos aptos": "Apartamento, Apartamento Familiar, Suíte Premium",
+        "Número de leitos (capacidade máxima de hóspedes)": "acima 454",
+        "Tipos de pensão": "Só café da manhã",
+        "Principais Distâncias": "Aeroporto Internacional de Belém - 12km\nEstação das Docas - 1km\nMercado Ver-o-Peso - 1.5km",
+        "Restaurantes": "2 restaurantes",
+        "Estrutura de Lazer": "Spa, Piscina",
+        "Atrações turísticas regionais": "Mercado Ver-o-Peso, Estação das Docas, Forte do Presépio, Catedral da Sé, Mangal das Garças",
+        "Principais concorrentes": "Grand Mercure Belém, Radisson Belém",
+        "imagem": "/images/hotels/vila-gale-collection-amazonia.jpg",
+        "salas": [
+            {
+                "nome": "Sala Master Carlos Gomes",
+                "pax": 450,
+                "tipo": "auditório"
+            }
+        ]
+    },
+    {
+        "hotel": "Vila Galé Ouro Preto",
+        "Localização": "Ouro Preto/MG",
+        "Quantidade de aptos": "311",
+        "Configuração dos aptos": "Apartamento, Apartamento Premium, Suíte",
+        "Número de leitos (capacidade máxima de hóspedes)": "acima de 622",
+        "Tipos de pensão": "Só café da manhã",
+        "Principais Distâncias": "Belo Horizonte - 96km\nAeroporto Confins - 140km",
+        "Restaurantes": "2 restaurantes",
+        "Estrutura de Lazer": "Piscina, Academia, Spa",
+        "Atrações turísticas regionais": "Museu da Inconfidência, Praça Tiradentes, Igreja São Francisco de Assis, Minas de Ouro",
+        "Principais concorrentes": "Solar do Rosário, Pousada do Mondego",
+        "imagem": "/images/hotels/vila-gale-ouro-preto.webp",
+        "salas": [
+            {
+                "nome": "Salão Master Tiradentes",
+                "pax": 500,
+                "tipo": "auditório"
+            }
+        ]
+    },
+    {
+        "hotel": "Intercity Portofino",
+        "Localização": "Florianópolis/SC",
+        "Quantidade de aptos": "140",
+        "Configuração dos aptos": "Premium, Standard, Suíte",
+        "Número de leitos (capacidade máxima de hóspedes)": "acima de 280",
+        "Tipos de pensão": "Só café da manhã",
+        "Principais Distâncias": "Aeroporto - 20km\nCentro - 10km",
+        "Restaurantes": "1 restaurante",
+        "Estrutura de Lazer": "Piscina térmica, Fitness center",
+        "Atrações turísticas regionais": "Floripa Shopping, Praias do Norte",
+        "Principais concorrentes": "Mercure Florianópolis",
+        "imagem": "/images/hotels/intercity-portofino.webp",
+        "salas": [
+            {
+                "nome": "Sala principal",
+                "pax": 250,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Sala 2",
+                "pax": 0,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Sala 3",
+                "pax": 0,
+                "tipo": "auditório"
+            }
+        ]
+    },
+    {
+        "hotel": "Intercity Centro",
+        "Localização": "Florianópolis/SC",
+        "Quantidade de aptos": "122",
+        "Configuração dos aptos": "Standard, Luxo, Suíte",
+        "Número de leitos (capacidade máxima de hóspedes)": "acima de 244",
+        "Tipos de pensão": "Só café da manhã",
+        "Principais Distâncias": "Aeroporto - 12km\nCentro - 0km",
+        "Restaurantes": "1 restaurante",
+        "Estrutura de Lazer": "Piscina, Fitness center",
+        "Atrações turísticas regionais": "Mercado Público, Ponte Hercílio Luz",
+        "Principais concorrentes": "Blue Tree Florianópolis",
+        "imagem": "/images/hotels/intercity-centro.webp",
+        "salas": [
+            {
+                "nome": "Sala principal",
+                "pax": 150,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Sala 2",
+                "pax": 0,
+                "tipo": "auditório"
+            }
+        ]
+    },
+    {
+        "hotel": "Sibara",
+        "Localização": "Balneário Camboriú/SC",
+        "Quantidade de aptos": "267",
+        "Configuração dos aptos": "Econômico, Superior, Flat, Suíte Master",
+        "Número de leitos (capacidade máxima de hóspedes)": "809",
+        "Tipos de pensão": "Só café da manhã",
+        "Principais Distâncias": "Aeroporto Navegantes - 34km\nBeto Carrero - 38km",
+        "Restaurantes": "1 restaurante",
+        "Estrutura de Lazer": "Piscina, Sauna, Sala de jogos",
+        "Atrações turísticas regionais": "Praia Central, Parque Unipraias, Roda Gigante",
+        "Principais concorrentes": "Infinity Blue, Mercure Camboriú",
+        "imagem": "/images/hotels/sibara.jpg",
+        "salas": [
+            {
+                "nome": "Salão principal",
+                "pax": 1200,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Sala 2",
+                "pax": 0,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Sala 3",
+                "pax": 0,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Sala 4",
+                "pax": 0,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Sala 5",
+                "pax": 0,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Sala 6",
+                "pax": 0,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Sala 7",
+                "pax": 0,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Sala 8",
+                "pax": 0,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Sala 9",
+                "pax": 0,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Sala 10",
+                "pax": 0,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Sala 11",
+                "pax": 0,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Sala 12",
+                "pax": 0,
+                "tipo": "auditório"
+            }
+        ]
+    }
 ]

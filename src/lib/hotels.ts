@@ -1,5 +1,22 @@
 /* ── Hotel data model & utility functions ── */
 
+export type SalaTipo =
+    | "auditório"
+    | "coquetel"
+    | "banquete"
+    | "boardroom"
+    | "apoio"
+    | "configuração"
+    | "outro";
+
+/** Espaço/sala individual de um hotel */
+export interface Sala {
+    nome: string;
+    /** Capacidade em pax (0 = desconhecida) */
+    pax: number;
+    tipo: SalaTipo;
+}
+
 export interface HotelRaw {
     hotel: string;
     imagem?: string | null;
@@ -8,13 +25,13 @@ export interface HotelRaw {
     "Configuração dos aptos": string;
     "Número de leitos (capacidade máxima de hóspedes)": string;
     "Tipos de pensão": string;
-    "Capacidade do maior espaço (auditório)": string;
-    "Número de salas": string;
     "Principais Distâncias": string;
     Restaurantes: string;
     "Estrutura de Lazer": string;
     "Atrações turísticas regionais": string;
     "Principais concorrentes": string;
+    /** Array estruturado de salas/espaços de eventos */
+    salas: Sala[];
 }
 
 export interface HotelTag {
@@ -34,8 +51,10 @@ export interface Hotel {
     roomConfig: string;
     maxGuests: string;
     pensionTypes: string[];
+    /** Capacidade do maior espaço — derivado do array salas */
     auditoriumCapacity: number;
-    meetingRooms: string;
+    /** Array estruturado de salas/espaços */
+    salas: Sala[];
     distances: string;
     restaurants: string;
     leisure: string;
@@ -82,10 +101,9 @@ function extractPensions(raw: string): string[] {
 }
 
 /** Extrai capacidade do auditório como número */
-function parseAuditoriumCapacity(raw: string): number {
-    if (!raw || raw === "-" || raw.toLowerCase().includes("não tem")) return 0;
-    const n = parseInt(raw.replace(/\D/g, ""), 10);
-    return isNaN(n) ? 0 : n;
+function parseAuditoriumCapacity(salas: Sala[]): number {
+    if (!salas || salas.length === 0) return 0;
+    return Math.max(...salas.map((s) => s.pax));
 }
 
 /** Gera tags automaticamente */
@@ -96,14 +114,14 @@ function generateTags(raw: HotelRaw): HotelTag[] {
     const roomConfig = (raw["Configuração dos aptos"] || "").toLowerCase();
     const rooms = parseInt(raw["Quantidade de aptos"]?.replace(/\D/g, ""), 10);
 
-    // Número de salas — conta linhas não vazias no campo descritivo
-    const salasRaw = raw["Número de salas"] || "";
-    const salasCount = salasRaw === "-" || salasRaw.trim() === ""
-        ? 0
-        : salasRaw.split("\n").filter(l => l.trim().length > 0).length;
+    const salas = raw.salas ?? [];
 
-    // Capacidade do maior espaço como primeira chip
-    const audCap = parseAuditoriumCapacity(raw["Capacidade do maior espaço (auditório)"]);
+    // Tipos que contam como "salas" para o chip de contagem
+    const TIPOS_SALA: SalaTipo[] = ["auditório", "boardroom", "apoio"];
+    const salasCount = salas.filter((s) => TIPOS_SALA.includes(s.tipo)).length;
+
+    // Capacidade do maior espaço — derivado do array salas
+    const audCap = parseAuditoriumCapacity(salas);
     if (audCap > 0) {
         tags.push({
             label: `${audCap.toLocaleString("pt-BR")} pax`,
@@ -179,8 +197,8 @@ export function parseHotel(raw: HotelRaw): Hotel {
         roomConfig: raw["Configuração dos aptos"],
         maxGuests: raw["Número de leitos (capacidade máxima de hóspedes)"],
         pensionTypes: extractPensions(raw["Tipos de pensão"]),
-        auditoriumCapacity: parseAuditoriumCapacity(raw["Capacidade do maior espaço (auditório)"]),
-        meetingRooms: raw["Número de salas"],
+        auditoriumCapacity: parseAuditoriumCapacity(raw.salas ?? []),
+        salas: raw.salas ?? [],
         distances: raw["Principais Distâncias"],
         restaurants: raw.Restaurantes,
         leisure: raw["Estrutura de Lazer"],
