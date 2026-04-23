@@ -1,0 +1,14 @@
+Options -MultiViews
+RewriteEngine On
+
+# Não reescrever arquivos ou pastas existentes
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Servir index.html dentro de subpastas
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI}/index.html -f
+RewriteRule ^(.+[^/])/?$ $1/index.html [L]
+
+# Fallback para index.html raiz
+RewriteRule ^ /index.html [L]

@@ -9,7 +9,7 @@
 $SSH_HOST = "212.85.6.169"
 $SSH_PORT = "65002"
 $SSH_USER = "u236296388"
-$REMOTE_DIR = "/home/u236296388/domains/piresevents.com.br/public_html"
+$REMOTE_DIR = "/home/u236296388/domains/piresdestinoseventos.com.br/public_html"
 
 # ── 1. Build local ────────────────────────────────────────────
 Write-Host "`n▶ Instalando dependências..." -ForegroundColor Cyan
