@@ -96,12 +96,25 @@ function generateTags(raw: HotelRaw): HotelTag[] {
     const roomConfig = (raw["Configuração dos aptos"] || "").toLowerCase();
     const rooms = parseInt(raw["Quantidade de aptos"]?.replace(/\D/g, ""), 10);
 
-    // Capacidade de hóspedes
-    const guests = raw["Número de leitos (capacidade máxima de hóspedes)"] || "";
-    const guestNum = parseInt(guests.replace(/\D/g, ""), 10);
-    if (!isNaN(guestNum) && guestNum > 0) {
+    // Número de salas — conta linhas não vazias no campo descritivo
+    const salasRaw = raw["Número de salas"] || "";
+    const salasCount = salasRaw === "-" || salasRaw.trim() === ""
+        ? 0
+        : salasRaw.split("\n").filter(l => l.trim().length > 0).length;
+
+    // Capacidade do maior espaço como primeira chip
+    const audCap = parseAuditoriumCapacity(raw["Capacidade do maior espaço (auditório)"]);
+    if (audCap > 0) {
         tags.push({
-            label: guestNum >= 1000 ? `${(guestNum / 1000).toFixed(0)}.000` : `${guestNum}`,
+            label: `${audCap.toLocaleString("pt-BR")} pax`,
+            type: "capacity",
+        });
+    }
+
+    // Número de salas
+    if (salasCount > 0) {
+        tags.push({
+            label: salasCount === 1 ? "1 sala" : `${salasCount} salas`,
             type: "capacity",
         });
     }
@@ -139,12 +152,6 @@ function generateTags(raw: HotelRaw): HotelTag[] {
     // Suíte disponível
     if (roomConfig.includes("suíte") || roomConfig.includes("suite") || roomConfig.includes("suíte")) {
         tags.push({ label: "Suíte disponível", type: "rooms" });
-    }
-
-    // Salas de eventos
-    const audCap = parseAuditoriumCapacity(raw["Capacidade do maior espaço (auditório)"]);
-    if (audCap >= 500) {
-        tags.push({ label: `Auditório ${audCap.toLocaleString("pt-BR")} pax`, type: "rooms" });
     }
 
     // Muitos quartos

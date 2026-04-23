@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, Users } from "lucide-react";
+import { ArrowRight, LayoutGrid } from "lucide-react";
 import type { Hotel } from "@/lib/hotels";
 
 /**

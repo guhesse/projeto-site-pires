@@ -20,7 +20,7 @@ const partnerLogos = [
   { name: "Hotel Seven", src: "/images/logo-hotel-seven.png", w: 136, h: 36 },
   { name: "Intercity", src: "/images/logo-intercity.png", w: 183, h: 67 },
   { name: "Oceania", src: "/images/logo-oceania.png", w: 133, h: 91 },
-  { name: "Costão do Santinho", src: "/images/logo-costao.png", w: 88, h: 91 },
+
   { name: "Royal Palm", src: "/images/logo-royal-palm.png", w: 107, h: 107 },
 ];
 
