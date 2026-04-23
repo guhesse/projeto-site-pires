@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, LayoutGrid } from "lucide-react";
+import { ArrowRight, LayoutGrid, Users, DoorOpen } from "lucide-react";
 import type { Hotel } from "@/lib/hotels";
 
 /**
@@ -52,6 +52,9 @@ export default function HotelCard({ hotel }: HotelCardProps) {
                             >
                                 {tag.type === "capacity" && (
                                     <Users className="w-[20px] h-[20px] text-[#F8EAF1]" strokeWidth={1.5} />
+                                )}
+                                {tag.type === "rooms" && (
+                                    <DoorOpen className="w-[20px] h-[20px] text-[#F8EAF1]" strokeWidth={1.5} />
                                 )}
                                 <span className="text-[16px] lg:text-[18px] font-light text-[#F8EAF1] whitespace-nowrap">
                                     {tag.label}
