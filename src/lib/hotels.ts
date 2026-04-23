@@ -1,0 +1,286 @@
+/* ── Hotel data model & utility functions ── */
+
+export interface HotelRaw {
+    hotel: string;
+    imagem?: string | null;
+    Localização: string;
+    "Quantidade de aptos": string;
+    "Configuração dos aptos": string;
+    "Número de leitos (capacidade máxima de hóspedes)": string;
+    "Tipos de pensão": string;
+    "Capacidade do maior espaço (auditório)": string;
+    "Número de salas": string;
+    "Principais Distâncias": string;
+    Restaurantes: string;
+    "Estrutura de Lazer": string;
+    "Atrações turísticas regionais": string;
+    "Principais concorrentes": string;
+}
+
+export interface HotelTag {
+    label: string;
+    type: "capacity" | "pension" | "feature" | "location" | "rooms";
+}
+
+export interface Hotel {
+    slug: string;
+    name: string;
+    location: string;
+    /** Estado extraído (ex: "SP", "SC", "RJ") */
+    state: string;
+    /** Cidade extraída */
+    city: string;
+    rooms: string;
+    roomConfig: string;
+    maxGuests: string;
+    pensionTypes: string[];
+    auditoriumCapacity: number;
+    meetingRooms: string;
+    distances: string;
+    restaurants: string;
+    leisure: string;
+    attractions: string;
+    competitors: string;
+    tags: HotelTag[];
+    /** Image placeholder — could be replaced with real images */
+    image: string | null;
+}
+
+/** Gera slug a partir do nome do hotel */
+export function toSlug(name: string): string {
+    return name
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/^-+|-+$/g, "");
+}
+
+/** Extrai estado do campo Localização */
+function extractState(location: string): string {
+    // Match patterns like "/SC", "/ SC", "/SP"
+    const match = location.match(/\/\s*([A-Z]{2})\s*$/);
+    return match ? match[1] : "";
+}
+
+/** Extrai cidade do campo Localização */
+function extractCity(location: string): string {
+    // Remove estado e limpa
+    return location
+        .replace(/\/\s*[A-Z]{2}\s*$/, "")
+        .replace(/,\s*$/, "")
+        .trim();
+}
+
+/** Extrai pensões como array */
+function extractPensions(raw: string): string[] {
+    if (!raw || raw === "-") return [];
+    return raw
+        .split("\n")
+        .map((l) => l.trim())
+        .filter((l) => l && !l.startsWith("*"));
+}
+
+/** Extrai capacidade do auditório como número */
+function parseAuditoriumCapacity(raw: string): number {
+    if (!raw || raw === "-" || raw.toLowerCase().includes("não tem")) return 0;
+    const n = parseInt(raw.replace(/\D/g, ""), 10);
+    return isNaN(n) ? 0 : n;
+}
+
+/** Gera tags automaticamente */
+function generateTags(raw: HotelRaw): HotelTag[] {
+    const tags: HotelTag[] = [];
+    const leisure = (raw["Estrutura de Lazer"] || "").toLowerCase();
+    const pensions = raw["Tipos de pensão"] || "";
+    const roomConfig = (raw["Configuração dos aptos"] || "").toLowerCase();
+    const rooms = parseInt(raw["Quantidade de aptos"]?.replace(/\D/g, ""), 10);
+
+    // Capacidade de hóspedes
+    const guests = raw["Número de leitos (capacidade máxima de hóspedes)"] || "";
+    const guestNum = parseInt(guests.replace(/\D/g, ""), 10);
+    if (!isNaN(guestNum) && guestNum > 0) {
+        tags.push({
+            label: guestNum >= 1000 ? `${(guestNum / 1000).toFixed(0)}.000` : `${guestNum}`,
+            type: "capacity",
+        });
+    }
+
+    // Piscina
+    if (leisure.includes("piscina")) {
+        tags.push({ label: "Com piscina", type: "feature" });
+    }
+
+    // Spa
+    if (leisure.includes("spa")) {
+        tags.push({ label: "Spa", type: "feature" });
+    }
+
+    // Café da manhã
+    if (pensions.toLowerCase().includes("café da manhã") || pensions.toLowerCase().includes("só café")) {
+        tags.push({ label: "Café da manhã", type: "pension" });
+    }
+
+    // All Inclusive
+    if (pensions.toLowerCase().includes("all inclusive")) {
+        tags.push({ label: "All Inclusive", type: "pension" });
+    }
+
+    // Pensão completa
+    if (pensions.toLowerCase().includes("pensão completa")) {
+        tags.push({ label: "Pensão completa", type: "pension" });
+    }
+
+    // Meia pensão
+    if (pensions.toLowerCase().includes("meia pensão")) {
+        tags.push({ label: "Meia pensão", type: "pension" });
+    }
+
+    // Suíte disponível
+    if (roomConfig.includes("suíte") || roomConfig.includes("suite") || roomConfig.includes("suíte")) {
+        tags.push({ label: "Suíte disponível", type: "rooms" });
+    }
+
+    // Salas de eventos
+    const audCap = parseAuditoriumCapacity(raw["Capacidade do maior espaço (auditório)"]);
+    if (audCap >= 500) {
+        tags.push({ label: `Auditório ${audCap.toLocaleString("pt-BR")} pax`, type: "rooms" });
+    }
+
+    // Muitos quartos
+    if (!isNaN(rooms) && rooms >= 300) {
+        tags.push({ label: `${rooms}+ aptos`, type: "capacity" });
+    }
+
+    // Academia
+    if (leisure.includes("academia") || leisure.includes("fitness")) {
+        tags.push({ label: "Academia", type: "feature" });
+    }
+
+    return tags;
+}
+
+/** Transforma o JSON raw em Hotel tipado */
+export function parseHotel(raw: HotelRaw): Hotel {
+    return {
+        slug: toSlug(raw.hotel),
+        name: raw.hotel,
+        location: raw["Localização"],
+        state: extractState(raw["Localização"]),
+        city: extractCity(raw["Localização"]),
+        rooms: raw["Quantidade de aptos"],
+        roomConfig: raw["Configuração dos aptos"],
+        maxGuests: raw["Número de leitos (capacidade máxima de hóspedes)"],
+        pensionTypes: extractPensions(raw["Tipos de pensão"]),
+        auditoriumCapacity: parseAuditoriumCapacity(raw["Capacidade do maior espaço (auditório)"]),
+        meetingRooms: raw["Número de salas"],
+        distances: raw["Principais Distâncias"],
+        restaurants: raw.Restaurantes,
+        leisure: raw["Estrutura de Lazer"],
+        attractions: raw["Atrações turísticas regionais"],
+        competitors: raw["Principais concorrentes"],
+        tags: generateTags(raw),
+        image: raw.imagem || null,
+    };
+}
+
+/* ── Categorias de filtro disponíveis ── */
+
+export interface FilterOption {
+    id: string;
+    label: string;
+    category: string;
+}
+
+export function getAllFilterOptions(hotels: Hotel[]): {
+    categories: { id: string; label: string; options: FilterOption[] }[];
+} {
+    const states = [...new Set(hotels.map((h) => h.state).filter(Boolean))].sort();
+    const cities = [...new Set(hotels.map((h) => h.city).filter(Boolean))].sort();
+
+    return {
+        categories: [
+            {
+                id: "state",
+                label: "Estado",
+                options: states.map((s) => ({ id: `state:${s}`, label: s, category: "state" })),
+            },
+            {
+                id: "city",
+                label: "Cidade",
+                options: cities.map((c) => ({ id: `city:${c}`, label: c, category: "city" })),
+            },
+            {
+                id: "pension",
+                label: "Tipo de pensão",
+                options: [
+                    { id: "pension:cafe", label: "Café da manhã", category: "pension" },
+                    { id: "pension:meia", label: "Meia pensão", category: "pension" },
+                    { id: "pension:completa", label: "Pensão completa", category: "pension" },
+                    { id: "pension:allinclusive", label: "All Inclusive", category: "pension" },
+                ],
+            },
+            {
+                id: "feature",
+                label: "Estrutura",
+                options: [
+                    { id: "feature:piscina", label: "Com piscina", category: "feature" },
+                    { id: "feature:spa", label: "Spa", category: "feature" },
+                    { id: "feature:academia", label: "Academia", category: "feature" },
+                ],
+            },
+            {
+                id: "capacity",
+                label: "Capacidade",
+                options: [
+                    { id: "capacity:small", label: "Até 200 hóspedes", category: "capacity" },
+                    { id: "capacity:medium", label: "200–600 hóspedes", category: "capacity" },
+                    { id: "capacity:large", label: "600+ hóspedes", category: "capacity" },
+                ],
+            },
+        ],
+    };
+}
+
+/** Aplica filtros ativos aos hotéis */
+export function filterHotels(hotels: Hotel[], activeFilters: string[]): Hotel[] {
+    if (activeFilters.length === 0) return hotels;
+
+    return hotels.filter((hotel) => {
+        return activeFilters.every((filter) => {
+            const [category, value] = filter.split(":");
+
+            switch (category) {
+                case "state":
+                    return hotel.state === value;
+                case "city":
+                    return hotel.city === value;
+                case "pension": {
+                    const pensions = hotel.pensionTypes.join(" ").toLowerCase();
+                    if (value === "cafe") return pensions.includes("café") || pensions.includes("cafe");
+                    if (value === "meia") return pensions.includes("meia");
+                    if (value === "completa") return pensions.includes("pensão completa");
+                    if (value === "allinclusive") return pensions.includes("all inclusive");
+                    return false;
+                }
+                case "feature": {
+                    const leisure = hotel.leisure.toLowerCase();
+                    if (value === "piscina") return leisure.includes("piscina");
+                    if (value === "spa") return leisure.includes("spa");
+                    if (value === "academia") return leisure.includes("academia") || leisure.includes("fitness");
+                    return false;
+                }
+                case "capacity": {
+                    const n = parseInt(hotel.maxGuests.replace(/\D/g, ""), 10);
+                    if (isNaN(n)) return false;
+                    if (value === "small") return n <= 200;
+                    if (value === "medium") return n > 200 && n <= 600;
+                    if (value === "large") return n > 600;
+                    return false;
+                }
+                default:
+                    return true;
+            }
+        });
+    });
+}
