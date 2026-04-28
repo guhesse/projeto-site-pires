@@ -20,8 +20,9 @@ import { Menu, X } from "lucide-react";
 const navLinks = [
   { label: "Home", href: "/" },
   { label: "Locais", href: "/locais" },
-  { label: "Para quem organiza", href: "/para-quem-organiza" },
-  { label: "Para seu espaço", href: "/para-seu-espaco" },
+  { label: "Quem organiza", href: "/para-quem-organiza" },
+  { label: "Seu espaço", href: "/para-seu-espaco" },
+  { label: "Quem Somos", href: "/quem-somos" },
 ];
 
 const WHATSAPP_NUMBER = "5548996267846";
