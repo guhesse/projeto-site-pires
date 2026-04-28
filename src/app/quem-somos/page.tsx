@@ -17,7 +17,31 @@ import {
 export const metadata = {
   title: "Quem Somos | Pires",
   description:
-    "Conheça a história da Pires: três gerações de tradição, expertise em eventos e inovação com a Orçamenta.ai.",
+    "Três gerações de tradição, expertise em captação de eventos e inovação com a Orçamenta.ai. Conheça a história da Pires.",
+  openGraph: {
+    title: "Quem Somos | Pires",
+    description:
+      "Três gerações de tradição, expertise em captação de eventos e inovação com a Orçamenta.ai. Conheça a história da Pires.",
+    url: "https://pires.tur.br/quem-somos",
+    siteName: "Pires",
+    images: [
+      {
+        url: "/images/hotels/royal-palm-hall.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Pires — Uma jornada de tradição, inovação e legado",
+      },
+    ],
+    locale: "pt_BR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Quem Somos | Pires",
+    description:
+      "Três gerações de tradição, expertise em captação de eventos e inovação com a Orçamenta.ai.",
+    images: ["/images/hotels/royal-palm-hall.jpg"],
+  },
 };
 
 /* ── Stats ── */
