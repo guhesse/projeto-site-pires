@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { Award } from "lucide-react";
 import FadeIn from "@/components/FadeIn";
 
 const WHATSAPP_NUMBER = "5548996267846";
@@ -28,7 +29,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="flex justify-center pt-[130px] pb-10 px-6"
+      className="flex justify-center pt-[130px] px-6"
     >
       {/* ── Frame40 (outer card) ── */}
       <div
@@ -42,10 +43,18 @@ export default function Hero() {
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-[88px] items-start">
             {/* Heading */}
             <FadeIn delay={0}>
-              <h1 className="text-[30px] lg:text-[48px] leading-[1.15] font-light tracking-tight text-[#3A0814] max-w-[671px] shrink-0">
-                Inteligência e Negócios
-                para o seu Espaço ou Evento.
-              </h1>
+              <div className="flex flex-col gap-4 shrink-0 max-w-[671px]">
+                {/* Badge de credibilidade */}
+                <span className="inline-flex items-center gap-2 bg-[#A01259]/10 border border-[#A01259]/20 text-[#A01259] rounded-full px-4 py-1.5 text-[11px] lg:text-[12px] font-light tracking-widest uppercase w-fit">
+                  <Award className="w-3.5 h-3.5" />
+                  30 anos de mercado · Brasil e Exterior
+                </span>
+
+                <h1 className="text-[30px] lg:text-[48px] leading-[1.15] font-light tracking-tight text-[#3A0814]">
+                  Inteligência e Negócios
+                  para o seu Espaço ou Evento.
+                </h1>
+              </div>
             </FadeIn>
 
             {/* Frame37 (CTA + description) */}
@@ -69,10 +78,10 @@ export default function Hero() {
                   Quero representar meu espaço
                 </a>
 
-                {/* Description text */}
+                {/* Description text — copy com mais personalidade */}
                 <p className="text-[14px] lg:text-[17px] font-light text-[#3A0814]/80 leading-relaxed">
-                  30 anos conectando os melhores destinos e espaços
-                  aos eventos de sucesso no Brasil e no exterior.
+                  Da seleção do local à geração de demanda —
+                  uma curadoria para quem não improvisa.
                 </p>
               </div>
             </FadeIn>
@@ -91,6 +100,17 @@ export default function Hero() {
                 priority
                 sizes="(max-width: 1024px) 100vw, 1273px"
               />
+              {/* Overlay gradient sutil na parte inferior */}
+              <div className="absolute inset-0 bg-gradient-to-t from-[#3A0814]/40 via-transparent to-transparent" />
+              {/* Pill flutuante — locais curados */}
+              <div className="absolute bottom-4 left-4 lg:bottom-6 lg:left-6 flex items-center gap-3">
+                <div className="flex items-center gap-2 bg-[#F0EBED]/90 backdrop-blur-sm rounded-full px-4 py-2.5">
+                  <div className="w-2 h-2 rounded-full bg-[#A01259] animate-pulse" />
+                  <span className="text-[12px] lg:text-[14px] font-light text-[#3A0814] tracking-wide">
+                    +23 locais curados · Costão, Royal Palm, Vila Galé e mais
+                  </span>
+                </div>
+              </div>
             </div>
           </FadeIn>
 

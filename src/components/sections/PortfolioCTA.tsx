@@ -56,9 +56,14 @@ export default function PortfolioCTA({
       <div
         className="w-full max-w-[1380px] rounded-[25px] bg-[#53212D]
                    flex flex-col
-                   px-6 lg:px-[54px] py-12 lg:py-[72px]"
+                   px-6 lg:px-[54px] py-12 lg:py-[72px]
+                   relative overflow-hidden"
       >
-        <div className="flex flex-col gap-12 lg:gap-[78px]">
+        {/* Decorative circles */}
+        <div className="absolute -right-20 -top-20 w-[350px] h-[350px] rounded-full bg-[#A01259]/20 pointer-events-none" />
+        <div className="absolute -left-16 -bottom-16 w-[250px] h-[250px] rounded-full bg-[#3A0814]/30 pointer-events-none" />
+
+        <div className="flex flex-col gap-12 lg:gap-[78px] relative">
           {/* Heading */}
           <FadeIn>
             <h2 className="text-[28px] lg:text-[48px] leading-[1.15] font-light tracking-tight text-[#F0EBED] max-w-[580px]">

@@ -27,7 +27,7 @@ const stats = [
 
 export default function CuradoriaLocais() {
   return (
-    <section id="para-quem-organiza" className="flex justify-center px-6 pb-8">
+    <section id="para-quem-organiza" className="flex justify-center px-6 ">
       {/* ── Frame 36 (card container) ── */}
       <div
         className="w-full max-w-[1380px] rounded-[25px] bg-[#F0EBEE]
@@ -48,9 +48,13 @@ export default function CuradoriaLocais() {
           <div className="flex flex-col md:flex-row gap-10 lg:gap-[74px]">
             {stats.map((stat, i) => (
               <FadeIn key={stat.number} delay={i * 120}>
-                <div className="flex flex-col max-w-[363px]">
-                  {/* Número grande */}
-                  <span className="text-[48px] lg:text-[80px] leading-[1.1] font-light text-[#3A0814]">
+                <div className="flex flex-col max-w-[363px] relative">
+                  {/* Divisor vertical — apenas desktop, exceto último item */}
+                  {i < stats.length - 1 && (
+                    <div className="hidden md:block absolute -right-[37px] top-0 bottom-0 w-px bg-[#C4B5BB]/50" />
+                  )}
+                  {/* Número grande — acento de cor */}
+                  <span className="text-[48px] lg:text-[80px] leading-[1.1] font-light text-[#A01259]">
                     {stat.number}
                   </span>
 

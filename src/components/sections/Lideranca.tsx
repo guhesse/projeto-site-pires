@@ -1,6 +1,8 @@
 "use client";
 
+import Link from "next/link";
 import Image from "next/image";
+import { ArrowRight } from "lucide-react";
 import FadeIn from "@/components/FadeIn";
 
 /**
@@ -40,6 +42,25 @@ export default function Lideranca() {
                     Brasil e do exterior.
                   </p>
                 </div>
+                {/* Link de transição para Quem Somos */}
+                <FadeIn delay={100}>
+                  <Link
+                    href="/quem-somos"
+                    className="flex items-center justify-between
+                         bg-[#E2D8DA] hover:bg-[#d8cfd2] rounded-[20px]
+                         px-6 lg:px-8 py-5 transition-colors group w-full"
+                  >
+                    <span className="text-[15px] lg:text-[18px] font-light tracking-tight text-[#3A0814]">
+                      Conheça a história completa da Pires — três gerações de legado
+                    </span>
+                    <div
+                      className="w-10 h-10 rounded-full bg-[#A01259]/10 group-hover:bg-[#A01259]/20
+                           flex items-center justify-center transition-colors shrink-0 ml-4"
+                    >
+                      <ArrowRight className="w-4 h-4 text-[#A01259]" />
+                    </div>
+                  </Link>
+                </FadeIn>
               </div>
 
               {/* Image column */}
@@ -53,6 +74,8 @@ export default function Lideranca() {
               </div>
             </div>
           </FadeIn>
+
+
         </div>
       </div>
     </section>

@@ -14,6 +14,7 @@ import {
     getMaxCapacity,
     type HotelRaw,
 } from "@/lib/hotels";
+import { MapPin, SlidersHorizontal } from "lucide-react";
 
 import rawHoteis from "@/data/hoteis.json";
 
@@ -99,11 +100,18 @@ export default function LocaisPage() {
                             {/* Header row */}
                             <FadeIn>
                                 <div className="flex flex-col lg:flex-row justify-between gap-6">
-                                    <h1 className="text-[36px] lg:text-[48px] leading-[1.15] font-light tracking-tight text-[#3A0814] max-w-[675px]">
-                                        Um Portfólio Selecionado
-                                        <br />
-                                        para o seu Sucesso.
-                                    </h1>
+                                    <div className="flex flex-col gap-3">
+                                        {/* Badge de contexto */}
+                                        <span className="inline-flex items-center gap-2 bg-[#A01259]/10 border border-[#A01259]/20 text-[#A01259] rounded-full px-4 py-1.5 text-[11px] lg:text-[12px] font-light tracking-widest uppercase w-fit">
+                                            <MapPin className="w-3.5 h-3.5" />
+                                            {hotels.length} locais
+                                        </span>
+                                        <h1 className="text-[36px] lg:text-[48px] leading-[1.15] font-light tracking-tight text-[#3A0814] max-w-[675px]">
+                                            Um Portfólio Selecionado
+                                            <br />
+                                            para o seu Sucesso.
+                                        </h1>
+                                    </div>
                                     <p className="text-[18px] lg:text-[20px] leading-[1.15] font-light text-[#A78991] max-w-[417px]">
                                         De parcerias de décadas a novos destinos estratégicos, nossa
                                         rede oferece as melhores opções de logística e infraestrutura no
@@ -112,21 +120,30 @@ export default function LocaisPage() {
                                 </div>
                             </FadeIn>
 
-                            {/* Filter chips */}
+                            {/* Filter chips + contador */}
                             <FadeIn delay={100}>
-                                <FilterChips
-                                    activeFilters={[
-                                        ...(activeCapacityMin > 0
-                                            ? [{ id: "__capacity__", label: `Mín. ${activeCapacityMin.toLocaleString("pt-BR")} pax` }]
-                                            : []),
-                                        ...activeFilters.map((id) => ({
-                                            id,
-                                            label: filterLabelMap[id] || id,
-                                        })),
-                                    ]}
-                                    onRemoveFilter={handleRemoveFilter}
-                                    onOpenFilters={handleOpenFilters}
-                                />
+                                <div className="flex flex-col gap-3">
+                                    <FilterChips
+                                        activeFilters={[
+                                            ...(activeCapacityMin > 0
+                                                ? [{ id: "__capacity__", label: `Mín. ${activeCapacityMin.toLocaleString("pt-BR")} pax` }]
+                                                : []),
+                                            ...activeFilters.map((id) => ({
+                                                id,
+                                                label: filterLabelMap[id] || id,
+                                            })),
+                                        ]}
+                                        onRemoveFilter={handleRemoveFilter}
+                                        onOpenFilters={handleOpenFilters}
+                                    />
+                                    {/* Contador — acima do grid, visível após filtrar */}
+                                    <p className="text-[13px] lg:text-[14px] font-light text-[#A78991]">
+                                        <span className="text-[#3A0814] font-normal">{filteredHotels.length}</span>
+                                        {" "}de{" "}
+                                        <span className="text-[#3A0814] font-normal">{hotels.length}</span>
+                                        {" "}locais encontrados
+                                    </p>
+                                </div>
                             </FadeIn>
 
                             {/* Hotel grid */}
@@ -140,13 +157,21 @@ export default function LocaisPage() {
                                         ))}
                                     </div>
                                 ) : (
-                                    <div className="flex flex-col items-center justify-center py-20 gap-4">
-                                        <p className="text-[24px] font-light text-[#A78991]">
-                                            Nenhum local encontrado com esses filtros.
-                                        </p>
+                                    <div className="flex flex-col items-center justify-center py-20 gap-6">
+                                        <div className="w-16 h-16 rounded-full bg-[#E2D8DA] flex items-center justify-center">
+                                            <SlidersHorizontal className="w-7 h-7 text-[#A78991]" strokeWidth={1.5} />
+                                        </div>
+                                        <div className="flex flex-col items-center gap-2 text-center">
+                                            <p className="text-[20px] lg:text-[24px] font-light text-[#3A0814]">
+                                                Nenhum local encontrado.
+                                            </p>
+                                            <p className="text-[14px] lg:text-[16px] font-light text-[#A78991] max-w-[360px]">
+                                                Tente ajustar ou limpar os filtros para ver todos os {hotels.length} locais disponíveis.
+                                            </p>
+                                        </div>
                                         <button
-                                            onClick={() => setActiveFilters([])}
-                                            className="text-[16px] font-light text-[#A01259] hover:text-[#6D0026] transition-colors underline"
+                                            onClick={() => { setActiveFilters([]); setActiveCapacityMin(0); }}
+                                            className="inline-flex items-center gap-2 text-[14px] lg:text-[16px] font-light text-[#A01259] hover:text-[#6D0026] transition-colors"
                                         >
                                             Limpar todos os filtros
                                         </button>
@@ -154,12 +179,6 @@ export default function LocaisPage() {
                                 )}
                             </FadeIn>
 
-                            {/* Result count */}
-                            <div className="flex items-center justify-between py-3">
-                                <p className="text-[16px] font-light text-[#A78991]">
-                                    {filteredHotels.length} de {hotels.length} locais
-                                </p>
-                            </div>
                         </div>
                     </div>
                 </section>

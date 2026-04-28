@@ -3,6 +3,7 @@ import Hero from "@/components/sections/Hero";
 import CuradoriaLocais from "@/components/sections/CuradoriaLocais";
 import PortfolioCards from "@/components/sections/PortfolioCards";
 import Lideranca from "@/components/sections/Lideranca";
+import HomeCTA from "@/components/sections/HomeCTA";
 import ContatoForm from "@/components/sections/ContatoForm";
 import FooterSection from "@/components/sections/FooterSection";
 
@@ -29,6 +30,7 @@ export default function Home() {
         <CuradoriaLocais />
         <PortfolioCards />
         <Lideranca />
+        <HomeCTA />
         <ContatoForm />
         <FooterSection />
       </div>

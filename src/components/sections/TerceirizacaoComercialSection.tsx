@@ -41,23 +41,29 @@ export default function TerceirizacaoComercialSection() {
                    flex flex-col
                    px-6 lg:px-[54px] py-12 lg:py-[72px]"
             >
-                <div className="flex flex-col gap-12 lg:gap-[100px]">
+        <div className="flex flex-col gap-12 lg:gap-[100px]">
                     {/* Heading */}
                     <FadeIn>
-                        <h2 className="text-[28px] lg:text-[48px] leading-[1.15] font-light tracking-tight text-[#3A0814] max-w-[887px]">
-                            Terceirização Comercial:
-                            <br />
-                            Inteligência para o seu Espaço
-                        </h2>
+                        <div className="flex flex-col gap-4">
+                            {/* Badge */}
+                            <span className="inline-flex items-center gap-2 self-start rounded-full border border-[#A01259]/20 bg-[#A01259]/10 px-4 py-1.5 text-[13px] font-medium text-[#A01259]">
+                                Para proprietários de espaços
+                            </span>
+                            <h2 className="text-[28px] lg:text-[48px] leading-[1.15] font-light tracking-tight text-[#3A0814] max-w-[887px]">
+                                Terceirização Comercial:
+                                <br />
+                                Inteligência para o seu Espaço
+                            </h2>
+                        </div>
                     </FadeIn>
 
                     {/* Features row */}
-                    <div className="flex flex-col md:flex-row gap-10 lg:gap-[99px]">
+                    <div className="flex flex-col md:flex-row gap-6 lg:gap-8">
                         {features.map((feature, i) => {
                             const Icon = feature.icon;
                             return (
                                 <FadeIn key={feature.title} delay={i * 120}>
-                                    <div className="flex flex-col gap-[24px] max-w-[333px]">
+                                    <div className="flex flex-col gap-[24px] flex-1 rounded-[20px] bg-[#E2D8DA] p-6 lg:p-8">
                                         {/* Icon 71×71 */}
                                         <div className="w-[64px] h-[64px] flex items-center justify-center">
                                             <Icon

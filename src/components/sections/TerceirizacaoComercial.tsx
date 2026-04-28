@@ -1,6 +1,7 @@
 "use client";
 
-import { DoorOpen, PlaneTakeoff, ConciergeBell } from "lucide-react";
+import { DoorOpen, PlaneTakeoff, ConciergeBell, ArrowRight } from "lucide-react";
+import Link from "next/link";
 import FadeIn from "@/components/FadeIn";
 
 /**
@@ -42,20 +43,26 @@ export default function TerceirizacaoComercial() {
         <div className="flex flex-col gap-12 lg:gap-[100px]">
           {/* Heading */}
           <FadeIn>
-            <h2 className="text-[28px] lg:text-[48px] leading-[1.15] font-light tracking-tight text-[#3A0814] max-w-[887px]">
-              Curadoria de Locais:
-              <br />
-              Para quem organiza eventos
-            </h2>
+            <div className="flex flex-col gap-4">
+              {/* Badge */}
+              <span className="inline-flex items-center gap-2 self-start rounded-full border border-[#A01259]/20 bg-[#A01259]/10 px-4 py-1.5 text-[13px] font-medium text-[#A01259]">
+                Para organizadores de eventos
+              </span>
+              <h2 className="text-[28px] lg:text-[48px] leading-[1.15] font-light tracking-tight text-[#3A0814] max-w-[887px]">
+                Curadoria de Locais:
+                <br />
+                Para quem organiza eventos
+              </h2>
+            </div>
           </FadeIn>
 
           {/* ── Frame 32 (features row) ── */}
-          <div className="flex flex-col md:flex-row gap-10 lg:gap-[99px]">
+          <div className="flex flex-col md:flex-row gap-6 lg:gap-8">
             {features.map((feature, i) => {
               const Icon = feature.icon;
               return (
                 <FadeIn key={feature.title} delay={i * 120}>
-                  <div className="flex flex-col gap-[24px] max-w-[329px]">
+                  <div className="flex flex-col gap-[24px] flex-1 rounded-[20px] bg-[#E2D8DA] p-6 lg:p-8">
                     {/* Ícone — container 64×64, stroke #3A0814, peso leve */}
                     <div className="w-[64px] h-[64px] flex items-center justify-center">
                       <Icon className="w-[52px] h-[50px] text-[#3A0814]" strokeWidth={1.2} />
@@ -75,6 +82,17 @@ export default function TerceirizacaoComercial() {
               );
             })}
           </div>
+
+          {/* CTA */}
+          <FadeIn delay={360}>
+            <Link
+              href="/locais"
+              className="inline-flex items-center gap-2 self-start rounded-full bg-[#A01259] px-6 py-3 text-[15px] font-medium text-white hover:bg-[#8a0f4d] transition-colors"
+            >
+              Ver locais disponíveis
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </FadeIn>
         </div>
       </div>
     </section>
