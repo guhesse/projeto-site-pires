@@ -42,9 +42,8 @@ export default function Hero() {
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-[88px] items-start">
             {/* Heading */}
             <FadeIn delay={0}>
-              <h1 className="text-[44px] lg:text-[48px] leading-[1.15] font-light tracking-tight text-[#3A0814] max-w-[671px] shrink-0">
+              <h1 className="text-[30px] lg:text-[48px] leading-[1.15] font-light tracking-tight text-[#3A0814] max-w-[671px] shrink-0">
                 Inteligência e Negócios
-                <br />
                 para o seu Espaço ou Evento.
               </h1>
             </FadeIn>
@@ -60,8 +59,8 @@ export default function Hero() {
                   className="inline-flex items-center justify-center gap-2
                              bg-[#A0125A] hover:bg-[#8a0f4e] text-white
                              rounded-[30px] px-[28px] py-[12px]
-                             text-[17px] font-normal tracking-wide transition-all duration-300
-                             hover:shadow-lg hover:shadow-[#A0125A]/20 w-fit"
+                             text-[15px] lg:text-[17px] font-normal tracking-wide transition-all duration-300
+                             hover:shadow-lg hover:shadow-[#A0125A]/20 w-fit whitespace-nowrap"
                   style={{ fontFamily: "Geist, sans-serif" }}
                 >
                   <svg viewBox="0 0 24 24" className="w-4 h-4 fill-current" aria-hidden="true">
@@ -71,9 +70,8 @@ export default function Hero() {
                 </a>
 
                 {/* Description text */}
-                <p className="text-[17px] font-light text-[#3A0814]/80 leading-relaxed">
+                <p className="text-[14px] lg:text-[17px] font-light text-[#3A0814]/80 leading-relaxed">
                   30 anos conectando os melhores destinos e espaços
-                  <br />
                   aos eventos de sucesso no Brasil e no exterior.
                 </p>
               </div>
@@ -83,7 +81,7 @@ export default function Hero() {
           {/* ── Rectangle1 (hero image) — 1273×627, corner 25 ── */}
           <FadeIn variant="scale" delay={200}>
             <div
-              className="w-full aspect-[1273/627] rounded-[25px] overflow-hidden relative"
+              className="w-full aspect-[4/3] lg:aspect-[1273/627] rounded-[25px] overflow-hidden relative"
             >
               <Image
                 src="/images/hero-bg-348bbe.jpg"
@@ -97,16 +95,18 @@ export default function Hero() {
           </FadeIn>
 
           {/* ── Frame1 (logos parceiros) — HORIZONTAL gap=60 ── */}
-          <div className="flex items-center justify-center gap-6 lg:gap-[60px] flex-wrap py-4">
+          <div className="grid grid-cols-3 lg:flex items-center justify-center gap-6 lg:gap-[60px] py-4">
             {partnerLogos.map((logo, i) => (
               <FadeIn key={logo.name} variant="fade" delay={100 + i * 80}>
-                <Image
-                  src={logo.src}
-                  alt={logo.name}
-                  width={logo.w}
-                  height={logo.h}
-                  className="object-contain opacity-60 hover:opacity-100 transition-opacity duration-300"
-                />
+                <div className="flex items-center justify-center">
+                  <Image
+                    src={logo.src}
+                    alt={logo.name}
+                    width={logo.w}
+                    height={logo.h}
+                    className="object-contain opacity-60 hover:opacity-100 transition-opacity duration-300 scale-[0.85] lg:scale-100"
+                  />
+                </div>
               </FadeIn>
             ))}
           </div>

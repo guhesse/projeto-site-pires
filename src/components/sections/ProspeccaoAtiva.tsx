@@ -42,7 +42,7 @@ export default function ProspeccaoAtiva() {
           <p className="text-[#A0125A] text-[20px]">Início da Prospecção Ativa</p>
 
           {/* Heading */}
-          <h2 className="text-[56px] leading-[1.1] font-normal max-w-[680px]">
+          <h2 className="text-[28px] lg:text-[56px] leading-[1.1] font-normal max-w-[680px]">
             Como funciona o nosso processo
           </h2>
 
@@ -53,11 +53,11 @@ export default function ProspeccaoAtiva() {
                 key={step.number}
                 className="rounded-[25px] bg-[#E2D8DA] p-8 flex flex-col gap-4"
               >
-                <span className="text-[#A0125A] text-[32px] font-normal">
+                <span className="text-[#A0125A] text-[20px] lg:text-[32px] font-normal">
                   {step.number}
                 </span>
-                <h3 className="text-[24px] font-normal">{step.title}</h3>
-                <p className="text-[16px] text-foreground/70">{step.description}</p>
+                <h3 className="text-[20px] lg:text-[24px] font-normal">{step.title}</h3>
+                <p className="text-[14px] lg:text-[16px] text-foreground/70">{step.description}</p>
               </div>
             ))}
           </div>

@@ -63,7 +63,7 @@ export default function ContatoForm() {
                             <h2 className="text-[32px] lg:text-[48px] leading-[1.15] font-light tracking-tight text-[#3A0814]">
                                 Vamos planejar o seu próximo sucesso?
                             </h2>
-                            <p className="text-[16px] lg:text-[20px] leading-[1.15] font-light text-[#A78991]">
+                            <p className="text-[14px] lg:text-[20px] leading-[1.15] font-light text-[#A78991]">
                                 Seja para representar seu espaço ou encontrar o destino ideal,
                                 nossa equipe está pronta para acelerar seus resultados.
                             </p>

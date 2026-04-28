@@ -25,16 +25,14 @@ export default function Lideranca() {
             <div className="flex flex-col lg:flex-row gap-8 lg:gap-[80px]">
               {/* Text column */}
               <div className="flex flex-col justify-between max-w-[647px] shrink-0">
-                <div className="flex flex-col gap-[80px]">
-                  <h2 className="text-[42px] lg:text-[48px] leading-[1.15] font-light tracking-tight text-[#3A0814] max-w-[887px]">
+                <div className="flex flex-col gap-[24px] lg:gap-[80px]">
+                  <h2 className="text-[28px] lg:text-[48px] leading-[1.15] font-light tracking-tight text-[#3A0814] max-w-[887px]">
                     Liderança que conhece
-                    <br />
                     o mercado e é conhecida
-                    <br />
                     por ele.
                   </h2>
 
-                  <p className="text-[18px] lg:text-[20px] leading-[1.15] font-light text-[#A78991] max-w-[540px]">
+                  <p className="text-[14px] lg:text-[20px] leading-[1.15] font-light text-[#A78991] max-w-[540px]">
                     Sob o comando de Juliana Pires, nossa Diretora Comercial,
                     unimos tradição e inovação para entregar resultados reais.
                     São 30 anos de atuação estratégica, construindo pontes

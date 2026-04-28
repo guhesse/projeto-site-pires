@@ -62,12 +62,12 @@ export default function PortfolioCards() {
                     {/* Header row */}
                     <FadeIn>
                         <div className="flex flex-col lg:flex-row justify-between gap-6">
-                            <h2 className="text-[42px] lg:text-[48px] leading-[1.15] font-light tracking-tight text-[#3A0814] max-w-[675px]">
+                            <h2 className="text-[28px] lg:text-[48px] leading-[1.15] font-light tracking-tight text-[#3A0814] max-w-[675px]">
                                 Um Portfólio Selecionado
                                 <br />
                                 para o seu Sucesso.
                             </h2>
-                            <p className="text-[18px] lg:text-[20px] leading-[1.15] font-light text-[#A78991] max-w-[417px]">
+                            <p className="text-[14px] lg:text-[20px] leading-[1.15] font-light text-[#A78991] max-w-[417px]">
                                 De parcerias de décadas a novos destinos estratégicos, nossa
                                 rede oferece as melhores opções de logística e infraestrutura no
                                 Brasil e no exterior.

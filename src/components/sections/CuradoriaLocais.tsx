@@ -38,9 +38,8 @@ export default function CuradoriaLocais() {
         <div className="flex flex-col gap-12 lg:gap-[100px]">
           {/* Heading */}
           <FadeIn>
-            <h2 className="text-[42px] lg:text-[48px] leading-[1.15] font-light tracking-tight text-[#3A0814] max-w-[887px]">
+            <h2 className="text-[28px] lg:text-[48px] leading-[1.15] font-light tracking-tight text-[#3A0814] max-w-[887px]">
               30 anos de atuação no mercado
-              <br />
               nacional e internacional.
             </h2>
           </FadeIn>
@@ -51,12 +50,12 @@ export default function CuradoriaLocais() {
               <FadeIn key={stat.number} delay={i * 120}>
                 <div className="flex flex-col max-w-[363px]">
                   {/* Número grande */}
-                  <span className="text-[72px] lg:text-[80px] leading-[1.1] font-light text-[#3A0814]">
+                  <span className="text-[48px] lg:text-[80px] leading-[1.1] font-light text-[#3A0814]">
                     {stat.number}
                   </span>
 
                   {/* Descrição */}
-                  <p className="text-[18px] lg:text-[20px] leading-[1.5] font-light text-[#A78991] whitespace-pre-line mt-2">
+                  <p className="text-[14px] lg:text-[20px] leading-[1.5] font-light text-[#A78991] whitespace-pre-line mt-2">
                     {stat.description}
                   </p>
                 </div>

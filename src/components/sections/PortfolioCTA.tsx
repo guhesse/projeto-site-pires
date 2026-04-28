@@ -61,7 +61,7 @@ export default function PortfolioCTA({
         <div className="flex flex-col gap-12 lg:gap-[78px]">
           {/* Heading */}
           <FadeIn>
-            <h2 className="text-[42px] lg:text-[48px] leading-[1.15] font-light tracking-tight text-[#F0EBED] max-w-[580px]">
+            <h2 className="text-[28px] lg:text-[48px] leading-[1.15] font-light tracking-tight text-[#F0EBED] max-w-[580px]">
               {data.heading}
             </h2>
           </FadeIn>
@@ -92,7 +92,7 @@ export default function PortfolioCTA({
                 {data.steps.map((step, i) => (
                   <span
                     key={i}
-                    className="text-[24px] lg:text-[28px] font-light tracking-tight text-[#F0EBED]"
+                    className="text-[20px] lg:text-[28px] font-light tracking-tight text-[#F0EBED]"
                   >
                     {step}
                   </span>

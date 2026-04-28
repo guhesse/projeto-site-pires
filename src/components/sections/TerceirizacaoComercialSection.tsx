@@ -44,7 +44,7 @@ export default function TerceirizacaoComercialSection() {
                 <div className="flex flex-col gap-12 lg:gap-[100px]">
                     {/* Heading */}
                     <FadeIn>
-                        <h2 className="text-[42px] lg:text-[48px] leading-[1.15] font-light tracking-tight text-[#3A0814] max-w-[887px]">
+                        <h2 className="text-[28px] lg:text-[48px] leading-[1.15] font-light tracking-tight text-[#3A0814] max-w-[887px]">
                             Terceirização Comercial:
                             <br />
                             Inteligência para o seu Espaço
@@ -67,12 +67,12 @@ export default function TerceirizacaoComercialSection() {
                                         </div>
 
                                         {/* Title */}
-                                        <h3 className="text-[24px] lg:text-[28px] font-light text-[#3A0814]">
+                                        <h3 className="text-[20px] lg:text-[28px] font-light text-[#3A0814]">
                                             {feature.title}
                                         </h3>
 
                                         {/* Description */}
-                                        <p className="text-[17px] lg:text-[20px] leading-[1.55] font-light text-[#A78991]">
+                                        <p className="text-[14px] lg:text-[20px] leading-[1.55] font-light text-[#A78991]">
                                             {feature.description}
                                         </p>
                                     </div>
