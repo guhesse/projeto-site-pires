@@ -11,6 +11,7 @@ import {
     parseHotel,
     filterHotels,
     getAllFilterOptions,
+    getMaxCapacity,
     type HotelRaw,
 } from "@/lib/hotels";
 
@@ -24,17 +25,20 @@ import rawHoteis from "@/data/hoteis.json";
  */
 
 const hotels = (rawHoteis as HotelRaw[]).map(parseHotel);
+const capacityMax = getMaxCapacity(hotels);
 
 export default function LocaisPage() {
     const [activeFilters, setActiveFilters] = useState<string[]>([]);
+    const [activeCapacityMin, setActiveCapacityMin] = useState(0);
     const [isFilterOpen, setIsFilterOpen] = useState(false);
     const [pendingFilters, setPendingFilters] = useState<string[]>([]);
+    const [pendingCapacityMin, setPendingCapacityMin] = useState(0);
 
     const { categories } = useMemo(() => getAllFilterOptions(hotels), []);
 
     const filteredHotels = useMemo(
-        () => filterHotels(hotels, activeFilters),
-        [activeFilters]
+        () => filterHotels(hotels, activeFilters, activeCapacityMin),
+        [activeFilters, activeCapacityMin]
     );
 
     /* ── Label map for chips ── */
@@ -49,13 +53,18 @@ export default function LocaisPage() {
     }, [categories]);
 
     const handleRemoveFilter = useCallback((id: string) => {
-        setActiveFilters((prev) => prev.filter((f) => f !== id));
+        if (id === "__capacity__") {
+            setActiveCapacityMin(0);
+        } else {
+            setActiveFilters((prev) => prev.filter((f) => f !== id));
+        }
     }, []);
 
     const handleOpenFilters = useCallback(() => {
         setPendingFilters(activeFilters);
+        setPendingCapacityMin(activeCapacityMin);
         setIsFilterOpen(true);
-    }, [activeFilters]);
+    }, [activeFilters, activeCapacityMin]);
 
     const handleTogglePending = useCallback((id: string) => {
         setPendingFilters((prev) =>
@@ -65,11 +74,13 @@ export default function LocaisPage() {
 
     const handleApply = useCallback(() => {
         setActiveFilters(pendingFilters);
+        setActiveCapacityMin(pendingCapacityMin);
         setIsFilterOpen(false);
-    }, [pendingFilters]);
+    }, [pendingFilters, pendingCapacityMin]);
 
     const handleClear = useCallback(() => {
         setPendingFilters([]);
+        setPendingCapacityMin(0);
     }, []);
 
     return (
@@ -104,10 +115,15 @@ export default function LocaisPage() {
                             {/* Filter chips */}
                             <FadeIn delay={100}>
                                 <FilterChips
-                                    activeFilters={activeFilters.map((id) => ({
-                                        id,
-                                        label: filterLabelMap[id] || id,
-                                    }))}
+                                    activeFilters={[
+                                        ...(activeCapacityMin > 0
+                                            ? [{ id: "__capacity__", label: `Mín. ${activeCapacityMin.toLocaleString("pt-BR")} pax` }]
+                                            : []),
+                                        ...activeFilters.map((id) => ({
+                                            id,
+                                            label: filterLabelMap[id] || id,
+                                        })),
+                                    ]}
                                     onRemoveFilter={handleRemoveFilter}
                                     onOpenFilters={handleOpenFilters}
                                 />
@@ -160,6 +176,9 @@ export default function LocaisPage() {
                 onToggleFilter={handleTogglePending}
                 onApply={handleApply}
                 onClear={handleClear}
+                capacityMin={pendingCapacityMin}
+                onCapacityChange={setPendingCapacityMin}
+                capacityMax={capacityMax}
             />
         </main>
     );

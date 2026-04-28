@@ -58,6 +58,9 @@ export default function HotelDetailView({ hotel }: Props) {
                       {tag.type === "capacity" && (
                         <Users className="w-5 h-5 text-[#F8EAF1]" strokeWidth={1.5} />
                       )}
+                      {tag.type === "rooms" && (
+                        <Bed className="w-5 h-5 text-[#F8EAF1]" strokeWidth={1.5} />
+                      )}
                       <span className="text-[16px] lg:text-[20px] font-light text-[#F8EAF1] whitespace-nowrap">
                         {tag.label}
                       </span>

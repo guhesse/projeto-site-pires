@@ -4,17 +4,6 @@ import { useEffect, useRef } from "react";
 import { X, Check } from "lucide-react";
 import type { FilterOption } from "@/lib/hotels";
 
-/**
- * FilterModal — Tela de seleção de filtros
- *
- * Segue o design system Pires:
- * - bg #F0EBED (brand-card), rounded-25
- * - Overlay para fechar
- * - Categorias em seções
- * - Opções com checkbox visual
- * - Botão "Aplicar" bg #A01259 e "Limpar" bg transparent
- */
-
 interface FilterCategory {
   id: string;
   label: string;
@@ -29,6 +18,12 @@ interface FilterModalProps {
   onToggleFilter: (id: string) => void;
   onApply: () => void;
   onClear: () => void;
+  /** Valor atual do slider (capacidade mínima) */
+  capacityMin: number;
+  /** Callback para mudar o slider */
+  onCapacityChange: (value: number) => void;
+  /** Valor máximo do slider */
+  capacityMax: number;
 }
 
 export default function FilterModal({
@@ -39,6 +34,9 @@ export default function FilterModal({
   onToggleFilter,
   onApply,
   onClear,
+  capacityMin,
+  onCapacityChange,
+  capacityMax,
 }: FilterModalProps) {
   const panelRef = useRef<HTMLDivElement>(null);
 
@@ -66,21 +64,24 @@ export default function FilterModal({
 
   if (!isOpen) return null;
 
+  const filledPct = capacityMax > 0 ? (capacityMin / capacityMax) * 100 : 0;
+
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center">
+    <div className="fixed inset-0 z-[100] flex items-end sm:items-center justify-center">
       {/* Overlay */}
       <div
         className="absolute inset-0 bg-black/40 backdrop-blur-sm"
         onClick={onClose}
       />
 
-      {/* Panel */}
+      {/* Panel — bottom sheet no mobile, centrado em sm+ */}
       <div
         ref={panelRef}
-        className="relative w-full max-w-[680px] max-h-[85vh] mx-4
-                   bg-[#F0EBED] rounded-[25px] shadow-2xl
+        className="relative w-full sm:max-w-[900px] h-[92dvh] sm:h-auto sm:max-h-[85vh] mx-0 sm:mx-4
+                   bg-[#F0EBED] rounded-t-[25px] sm:rounded-[25px] shadow-2xl
                    flex flex-col overflow-hidden
-                   animate-[scaleIn_0.3s_cubic-bezier(0.16,1,0.3,1)_forwards]"
+                   animate-[slideUp_0.3s_cubic-bezier(0.16,1,0.3,1)_forwards]
+                   sm:animate-[scaleIn_0.3s_cubic-bezier(0.16,1,0.3,1)_forwards]"
       >
         {/* Header */}
         <div className="flex items-center justify-between px-6 lg:px-10 pt-8 lg:pt-10 pb-4 lg:pb-6">
@@ -99,6 +100,42 @@ export default function FilterModal({
 
         {/* Scrollable body */}
         <div className="flex-1 overflow-y-auto px-6 lg:px-10 pb-6 space-y-8">
+
+          {/* ── Slider de capacidade mínima (primeiro item) ── */}
+          <div>
+            <h3 className="text-[20px] font-light text-[#A78991] mb-4">
+              Capacidade mínima
+            </h3>
+            <div className="flex flex-col gap-3">
+              <div className="flex justify-between text-[15px] font-light text-[#3A0814]">
+                <span>{capacityMin > 0 ? `${capacityMin.toLocaleString("pt-BR")} pax` : "Qualquer"}</span>
+                <span className="text-[#A78991]">{capacityMax.toLocaleString("pt-BR")} pax</span>
+              </div>
+              <div className="relative h-[6px] rounded-full bg-[#D3C4C8]">
+                <div
+                  className="absolute left-0 top-0 h-full rounded-full bg-[#A01259] pointer-events-none"
+                  style={{ width: `${filledPct}%` }}
+                />
+                <input
+                  type="range"
+                  min={0}
+                  max={capacityMax}
+                  step={Math.max(1, Math.floor(capacityMax / 50))}
+                  value={capacityMin}
+                  onChange={(e) => onCapacityChange(Number(e.target.value))}
+                  className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
+                  style={{ margin: 0 }}
+                />
+                {/* Thumb visual */}
+                <div
+                  className="absolute top-1/2 -translate-y-1/2 w-5 h-5 rounded-full bg-[#A01259] border-2 border-white shadow pointer-events-none"
+                  style={{ left: `calc(${filledPct}% - 10px)` }}
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* ── Categorias de checkbox ── */}
           {categories.map((cat) => (
             <div key={cat.id}>
               <h3 className="text-[20px] font-light text-[#A78991] mb-4">
@@ -143,12 +180,11 @@ export default function FilterModal({
             onClick={onApply}
             className="bg-[#A01259] hover:bg-[#8a0f4e] text-[#F0EBED]
                        rounded-[25px] px-8 py-3 text-[16px] font-medium transition-colors"
-            style={{ fontFamily: "Geist, sans-serif" }}
           >
             Aplicar filtros
-            {selectedFilters.length > 0 && (
+            {(selectedFilters.length > 0 || capacityMin > 0) && (
               <span className="ml-2 bg-white/20 rounded-full px-2 py-0.5 text-[13px]">
-                {selectedFilters.length}
+                {selectedFilters.length + (capacityMin > 0 ? 1 : 0)}
               </span>
             )}
           </button>

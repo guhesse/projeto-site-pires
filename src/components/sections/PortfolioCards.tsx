@@ -3,7 +3,7 @@
 import { useRef, useState, useEffect, useCallback } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, ArrowLeft, Users } from "lucide-react";
+import { ArrowRight, ArrowLeft, Users, Bed } from "lucide-react";
 import FadeIn from "@/components/FadeIn";
 import { parseHotel, type HotelRaw, type Hotel } from "@/lib/hotels";
 import rawHoteis from "@/data/hoteis.json";
@@ -196,6 +196,9 @@ function CarouselCard({
                         >
                             {tag.type === "capacity" && (
                                 <Users className="w-4 h-4 text-[#F8EAF1]" strokeWidth={1.5} />
+                            )}
+                            {tag.type === "rooms" && (
+                                <Bed className="w-4 h-4 text-[#F8EAF1]" strokeWidth={1.5} />
                             )}
                             <span className="text-[14px] lg:text-[16px] font-light text-[#F8EAF1] whitespace-nowrap">
                                 {tag.label}

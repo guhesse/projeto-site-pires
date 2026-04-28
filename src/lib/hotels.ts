@@ -53,6 +53,8 @@ export interface Hotel {
     pensionTypes: string[];
     /** Capacidade do maior espaço — derivado do array salas */
     auditoriumCapacity: number;
+    /** Soma de pax de todas as salas */
+    totalPax: number;
     /** Array estruturado de salas/espaços */
     salas: Sala[];
     distances: string;
@@ -100,36 +102,40 @@ function extractPensions(raw: string): string[] {
         .filter((l) => l && !l.startsWith("*"));
 }
 
-/** Extrai capacidade do auditório como número */
-function parseAuditoriumCapacity(salas: Sala[]): number {
+/** Soma de pax de todas as salas */
+function parseTotalPax(salas: Sala[]): number {
     if (!salas || salas.length === 0) return 0;
-    return Math.max(...salas.map((s) => s.pax));
+    return salas.reduce((sum, s) => sum + (s.pax || 0), 0);
 }
 
-/** Gera tags automaticamente */
+/** Gera tags automaticamente — 3 fixas + pension opcional */
 function generateTags(raw: HotelRaw): HotelTag[] {
     const tags: HotelTag[] = [];
-    const leisure = (raw["Estrutura de Lazer"] || "").toLowerCase();
     const pensions = raw["Tipos de pensão"] || "";
-    const roomConfig = (raw["Configuração dos aptos"] || "").toLowerCase();
     const rooms = parseInt(raw["Quantidade de aptos"]?.replace(/\D/g, ""), 10);
-
     const salas = raw.salas ?? [];
 
     // Tipos que contam como "salas" para o chip de contagem
     const TIPOS_SALA: SalaTipo[] = ["auditório", "boardroom", "apoio"];
     const salasCount = salas.filter((s) => TIPOS_SALA.includes(s.tipo)).length;
 
-    // Capacidade do maior espaço — derivado do array salas
-    const audCap = parseAuditoriumCapacity(salas);
-    if (audCap > 0) {
+    // Capacidade total (soma de pax)
+    const totalPax = parseTotalPax(salas);
+
+    // Tag 1 — Nº de apartamentos (sempre)
+    if (!isNaN(rooms) && rooms > 0) {
+        tags.push({ label: `${rooms} aptos`, type: "rooms" });
+    }
+
+    // Tag 2 — Capacidade total (sempre que houver salas)
+    if (totalPax > 0) {
         tags.push({
-            label: `${audCap.toLocaleString("pt-BR")} pax`,
+            label: `${totalPax.toLocaleString("pt-BR")} pax`,
             type: "capacity",
         });
     }
 
-    // Número de salas
+    // Tag 3 — Nº de salas (sempre que houver)
     if (salasCount > 0) {
         tags.push({
             label: salasCount === 1 ? "1 sala" : `${salasCount} salas`,
@@ -137,49 +143,13 @@ function generateTags(raw: HotelRaw): HotelTag[] {
         });
     }
 
-    // Piscina
-    if (leisure.includes("piscina")) {
-        tags.push({ label: "Com piscina", type: "feature" });
-    }
-
-    // Spa
-    if (leisure.includes("spa")) {
-        tags.push({ label: "Spa", type: "feature" });
-    }
-
-    // Café da manhã
-    if (pensions.toLowerCase().includes("café da manhã") || pensions.toLowerCase().includes("só café")) {
-        tags.push({ label: "Café da manhã", type: "pension" });
-    }
-
-    // All Inclusive
+    // Tag opcional — Pensão
     if (pensions.toLowerCase().includes("all inclusive")) {
         tags.push({ label: "All Inclusive", type: "pension" });
-    }
-
-    // Pensão completa
-    if (pensions.toLowerCase().includes("pensão completa")) {
+    } else if (pensions.toLowerCase().includes("pensão completa")) {
         tags.push({ label: "Pensão completa", type: "pension" });
-    }
-
-    // Meia pensão
-    if (pensions.toLowerCase().includes("meia pensão")) {
+    } else if (pensions.toLowerCase().includes("meia pensão")) {
         tags.push({ label: "Meia pensão", type: "pension" });
-    }
-
-    // Suíte disponível
-    if (roomConfig.includes("suíte") || roomConfig.includes("suite") || roomConfig.includes("suíte")) {
-        tags.push({ label: "Suíte disponível", type: "rooms" });
-    }
-
-    // Muitos quartos
-    if (!isNaN(rooms) && rooms >= 300) {
-        tags.push({ label: `${rooms}+ aptos`, type: "capacity" });
-    }
-
-    // Academia
-    if (leisure.includes("academia") || leisure.includes("fitness")) {
-        tags.push({ label: "Academia", type: "feature" });
     }
 
     return tags;
@@ -197,7 +167,8 @@ export function parseHotel(raw: HotelRaw): Hotel {
         roomConfig: raw["Configuração dos aptos"],
         maxGuests: raw["Número de leitos (capacidade máxima de hóspedes)"],
         pensionTypes: extractPensions(raw["Tipos de pensão"]),
-        auditoriumCapacity: parseAuditoriumCapacity(raw.salas ?? []),
+        auditoriumCapacity: raw.salas?.length ? Math.max(...raw.salas.map((s) => s.pax)) : 0,
+        totalPax: parseTotalPax(raw.salas ?? []),
         salas: raw.salas ?? [],
         distances: raw["Principais Distâncias"],
         restaurants: raw.Restaurantes,
@@ -254,24 +225,24 @@ export function getAllFilterOptions(hotels: Hotel[]): {
                     { id: "feature:academia", label: "Academia", category: "feature" },
                 ],
             },
-            {
-                id: "capacity",
-                label: "Capacidade",
-                options: [
-                    { id: "capacity:small", label: "Até 200 hóspedes", category: "capacity" },
-                    { id: "capacity:medium", label: "200–600 hóspedes", category: "capacity" },
-                    { id: "capacity:large", label: "600+ hóspedes", category: "capacity" },
-                ],
-            },
         ],
     };
 }
 
-/** Aplica filtros ativos aos hotéis */
-export function filterHotels(hotels: Hotel[], activeFilters: string[]): Hotel[] {
-    if (activeFilters.length === 0) return hotels;
+/** Retorna a maior capacidade total (totalPax) entre todos os hotéis */
+export function getMaxCapacity(hotels: Hotel[]): number {
+    if (!hotels.length) return 0;
+    return Math.max(...hotels.map((h) => h.totalPax));
+}
 
+/** Aplica filtros ativos aos hotéis */
+export function filterHotels(hotels: Hotel[], activeFilters: string[], capacityMin = 0): Hotel[] {
     return hotels.filter((hotel) => {
+        // Filtro de capacidade mínima via slider
+        if (capacityMin > 0 && hotel.totalPax < capacityMin) return false;
+
+        if (activeFilters.length === 0) return true;
+
         return activeFilters.every((filter) => {
             const [category, value] = filter.split(":");
 
@@ -293,14 +264,6 @@ export function filterHotels(hotels: Hotel[], activeFilters: string[]): Hotel[] 
                     if (value === "piscina") return leisure.includes("piscina");
                     if (value === "spa") return leisure.includes("spa");
                     if (value === "academia") return leisure.includes("academia") || leisure.includes("fitness");
-                    return false;
-                }
-                case "capacity": {
-                    const n = parseInt(hotel.maxGuests.replace(/\D/g, ""), 10);
-                    if (isNaN(n)) return false;
-                    if (value === "small") return n <= 200;
-                    if (value === "medium") return n > 200 && n <= 600;
-                    if (value === "large") return n > 600;
                     return false;
                 }
                 default:
