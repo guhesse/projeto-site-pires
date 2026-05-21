@@ -3,15 +3,17 @@
         "hotel": "Royal Palm Plaza",
         "Localização": "Campinas / SP",
         "Quantidade de aptos": "430",
-        "Configuração dos aptos": "SGL, DBL, TPL",
-        "Número de leitos (capacidade máxima de hóspedes)": "1100",
-        "Tipos de pensão": "Café da manhã\nPensão completa*\n*Observando a capacidade do restaurante, pode ser necessário realizar as refeições no Hall.",
+        "Configuração dos aptos": "Master, Luxo e Super Luxo",
+        "Número de leitos (capacidade máxima de hóspedes)": "3.700",
+        "Tipos de pensão": "Café da manhã",
         "Principais Distâncias": "16 Km do Aeroporto Internacional de Viracopos (15 minutos)\n90 km do Centro de São Paulo\n110 Km do Aeroporto Internacional de Guarulhos\n5 Km do Centro de Campinas",
-        "Restaurantes": "Vila Royal: 330 pax\nTerraço Gourmet: 300 pax\nLa Palette: 44 pax\nAdega Cave do Ouro: 40 pax",
-        "Estrutura de Lazer": "2 bares, café gourmet, 5 piscinas, 2 playgrounds aquáticos, Spa, Miniville, Kata Kuka, 4 quadras de tênis, campo de futebol society, ginásio poliesportivo e fitness center",
+        "Restaurantes": "Oito restaurantes e bares: La Palette, Bar Pessoa, Restaurante Vila Royal, Terraço Gourmet, Adega Cave do Douro, Café Gourmet, Bar Quiosque e Bar da Beira.",
+        "Estrutura de Lazer": "Sete piscinas, ginásio poliesportivo, quatro quadras de tênis, saunas, spa, fitness center, sala de cinema e duas áreas temáticas: Miniville (atração para crianças de 3 a 6 anos) e o Kata Kuka.",
         "Atrações turísticas regionais": "Bares, botecos, casas de shows. Mercado Municipal, Observatório Municipal de Campinas Jean Nicolini, Catedral Metropolitana de Campinas, Bosque dos Jequitibás. Zoo de Americana, Outlet Premium e Wet'n Wild em Itupeva. Holambra, capital nacional das flores.",
         "Principais concorrentes": "Bourbon Atibaia",
         "imagem": "/images/hotels/royal-palm-plaza.webp",
+        "maxPax": 3700,
+        "totalSalas": 38,
         "salas": [
             {
                 "nome": "Imperial (10 mód.)",
@@ -19,24 +21,9 @@
                 "tipo": "auditório"
             },
             {
-                "nome": "Casa de Campo",
-                "pax": 900,
-                "tipo": "auditório"
-            },
-            {
-                "nome": "Paço dos Nobres (4 mód.)",
-                "pax": 420,
-                "tipo": "auditório"
-            },
-            {
-                "nome": "Arena de Pedra",
-                "pax": 160,
-                "tipo": "auditório"
-            },
-            {
-                "nome": "Infante Dom Henrique",
-                "pax": 130,
-                "tipo": "auditório"
+                "nome": "Foyer Imperial",
+                "pax": 800,
+                "tipo": "coquetel"
             },
             {
                 "nome": "Dom Pedro (4 mód.)",
@@ -49,13 +36,8 @@
                 "tipo": "auditório"
             },
             {
-                "nome": "Lumini (cinema)",
-                "pax": 70,
-                "tipo": "auditório"
-            },
-            {
                 "nome": "Sala de apoio A",
-                "pax": 30,
+                "pax": 24,
                 "tipo": "apoio"
             },
             {
@@ -64,8 +46,18 @@
                 "tipo": "apoio"
             },
             {
+                "nome": "Paço dos Nobres (4 mód.) + Foyer",
+                "pax": 550,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Paço dos Nobres (4 mód.)",
+                "pax": 420,
+                "tipo": "auditório"
+            },
+            {
                 "nome": "Sala de apoio C",
-                "pax": 24,
+                "pax": 15,
                 "tipo": "apoio"
             },
             {
@@ -74,9 +66,34 @@
                 "tipo": "apoio"
             },
             {
-                "nome": "Sala de apoio E",
-                "pax": 15,
+                "nome": "Foyer Paço dos Nobres",
+                "pax": 250,
+                "tipo": "coquetel"
+            },
+            {
+                "nome": "Casa de Campo",
+                "pax": 900,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Varanda Casa de Campo",
+                "pax": 550,
+                "tipo": "coquetel"
+            },
+            {
+                "nome": "Sala de apoio Casa de Campo",
+                "pax": 30,
                 "tipo": "apoio"
+            },
+            {
+                "nome": "Infante Dom Henrique",
+                "pax": 130,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Foyer Infante Dom Henrique",
+                "pax": 100,
+                "tipo": "coquetel"
             },
             {
                 "nome": "Boardroom A",
@@ -89,24 +106,14 @@
                 "tipo": "boardroom"
             },
             {
-                "nome": "Foyer Imperial",
-                "pax": 800,
-                "tipo": "coquetel"
+                "nome": "Lumini (cinema)",
+                "pax": 70,
+                "tipo": "auditório"
             },
             {
-                "nome": "Varanda Casa de Campo",
-                "pax": 550,
-                "tipo": "coquetel"
-            },
-            {
-                "nome": "Foyer Paço dos Nobres",
-                "pax": 250,
-                "tipo": "coquetel"
-            },
-            {
-                "nome": "Foyer Infante Dom Henrique",
-                "pax": 100,
-                "tipo": "coquetel"
+                "nome": "Arena de Pedra",
+                "pax": 160,
+                "tipo": "auditório"
             }
         ]
     },
@@ -116,13 +123,14 @@
         "Quantidade de aptos": "190",
         "Configuração dos aptos": "SGL, DBL",
         "Número de leitos (capacidade máxima de hóspedes)": "380",
-        "Tipos de pensão": "Café da manhã\nPensão completa*\n*Observando a capacidade do restaurante, pode ser necessário realizar as refeições no Hall.",
+        "Tipos de pensão": "Café da manhã",
         "Principais Distâncias": "16 Km do Aeroporto Internacional de Viracopos (15 minutos)\n90 km do Centro de São Paulo\n110 Km do Aeroporto Internacional de Guarulhos\n5 Km do Centro de Campinas",
-        "Restaurantes": "1 (capacidade 240 pax)",
+        "Restaurantes": "Restaurante Amati com 240 lugares e lobby-bar.",
         "Estrutura de Lazer": "Lobby bar, fitness center, piscina e sauna",
         "Atrações turísticas regionais": "Bares, botecos, casas de shows. Mercado Municipal, Observatório Municipal de Campinas Jean Nicolini, Catedral Metropolitana de Campinas, Bosque dos Jequitibás. Zoo de Americana, Outlet Premium e Wet'n Wild em Itupeva. Holambra, capital nacional das flores.",
         "Principais concorrentes": "Radisson Red Campinas\nVitória Concept\nRamada\nMeliã Campinas",
         "imagem": "/images/hotels/royal-palm-tower-anhanguera.webp",
+        "maxPax": 600,
         "salas": [
             {
                 "nome": "Salão Anhanguera (3 mód.) + Foyer",
@@ -152,9 +160,9 @@
         "Quantidade de aptos": "280",
         "Configuração dos aptos": "SGL, DBL",
         "Número de leitos (capacidade máxima de hóspedes)": "560",
-        "Tipos de pensão": "Café da manhã\nPensão completa*\n*Observando a capacidade do restaurante, pode ser necessário realizar as refeições no Hall.",
+        "Tipos de pensão": "Café da manhã",
         "Principais Distâncias": "16 Km do Aeroporto Internacional de Viracopos (15 minutos)\n90 km do Centro de São Paulo\n110 Km do Aeroporto Internacional de Guarulhos\n5 Km do Centro de Campinas",
-        "Restaurantes": "1 self-service (capacidade 250 pax)",
+        "Restaurantes": "Restaurante Contemporâneo self-service com 250 lugares.",
         "Estrutura de Lazer": "-",
         "Atrações turísticas regionais": "Bares, botecos, casas de shows. Mercado Municipal, Observatório Municipal de Campinas Jean Nicolini, Catedral Metropolitana de Campinas, Bosque dos Jequitibás. Zoo de Americana, Outlet Premium e Wet'n Wild em Itupeva. Holambra, capital nacional das flores.",
         "Principais concorrentes": "Go Inn Campinas\nIbis Campinas\nRio Hotel by Bourbon\nCampinas\nSleep Inn Galleria",
@@ -164,9 +172,9 @@
     {
         "hotel": "Royal Palm Hall",
         "Localização": "Campinas / SP",
-        "Quantidade de aptos": "Anhanguera + Plaza + Contemporâneo*",
+        "Quantidade de aptos": "900 apartamentos disponíveis para eventos (Plaza + Anhanguera + Contemporâneo)",
         "Configuração dos aptos": "-",
-        "Número de leitos (capacidade máxima de hóspedes)": "-",
+        "Número de leitos (capacidade máxima de hóspedes)": "2.040",
         "Tipos de pensão": "-",
         "Principais Distâncias": "16 Km do Aeroporto Internacional de Viracopos (15 minutos)\n90 km do Centro de São Paulo\n110 Km do Aeroporto Internacional de Guarulhos\n5 Km do Centro de Campinas",
         "Restaurantes": "-",
@@ -174,6 +182,8 @@
         "Atrações turísticas regionais": "Bares, botecos, casas de shows. Mercado Municipal, Observatório Municipal de Campinas Jean Nicolini, Catedral Metropolitana de Campinas, Bosque dos Jequitibás. Zoo de Americana, Outlet Premium e Wet'n Wild em Itupeva. Holambra, capital nacional das flores.",
         "Principais concorrentes": "-",
         "imagem": "/images/hotels/royal-palm-hall.jpg",
+        "maxPax": 9000,
+        "totalSalas": 51,
         "salas": [
             {
                 "nome": "Salão Monumental (7 mód.)",
@@ -191,37 +201,177 @@
                 "tipo": "auditório"
             },
             {
-                "nome": "Piso Buriti — sala master",
-                "pax": 120,
-                "tipo": "auditório"
-            },
-            {
                 "nome": "Sala Jatobá (3 mód.)",
                 "pax": 70,
                 "tipo": "auditório"
             },
             {
-                "nome": "Piso Buriti (4 salas)",
+                "nome": "Piso Buriti — sala master",
+                "pax": 120,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Piso Buriti — sala 01",
                 "pax": 80,
                 "tipo": "auditório"
             },
             {
-                "nome": "Piso Jacarandá — salas grandes (2)",
+                "nome": "Piso Buriti — sala 02",
                 "pax": 70,
                 "tipo": "auditório"
             },
             {
-                "nome": "Piso Jacarandá (12 salas)",
+                "nome": "Piso Buriti — sala 03",
+                "pax": 60,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Piso Buriti — sala 04",
+                "pax": 56,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Piso Jacarandá — sala grande 01",
+                "pax": 70,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Piso Jacarandá — sala grande 02",
+                "pax": 70,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Piso Jacarandá — sala 01",
                 "pax": 55,
                 "tipo": "auditório"
             },
             {
-                "nome": "Piso Laranjeira (14 salas)",
+                "nome": "Piso Jacarandá — sala 02",
+                "pax": 55,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Piso Jacarandá — sala 03",
+                "pax": 55,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Piso Jacarandá — sala 04",
+                "pax": 50,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Piso Jacarandá — sala 05",
+                "pax": 50,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Piso Jacarandá — sala 06",
+                "pax": 50,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Piso Jacarandá — sala 07",
+                "pax": 48,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Piso Jacarandá — sala 08",
+                "pax": 48,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Piso Jacarandá — sala 09",
+                "pax": 45,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Piso Jacarandá — sala 10",
+                "pax": 45,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Piso Jacarandá — sala 11",
+                "pax": 42,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Piso Jacarandá — sala 12",
+                "pax": 40,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Piso Laranjeira — sala 01",
                 "pax": 36,
                 "tipo": "auditório"
             },
             {
-                "nome": "Foyers (3)",
+                "nome": "Piso Laranjeira — sala 02",
+                "pax": 36,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Piso Laranjeira — sala 03",
+                "pax": 36,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Piso Laranjeira — sala 04",
+                "pax": 36,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Piso Laranjeira — sala 05",
+                "pax": 36,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Piso Laranjeira — sala 06",
+                "pax": 36,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Piso Laranjeira — sala 07",
+                "pax": 36,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Piso Laranjeira — sala 08",
+                "pax": 36,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Piso Laranjeira — sala 09",
+                "pax": 36,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Piso Laranjeira — sala 10",
+                "pax": 36,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Piso Laranjeira — sala 11",
+                "pax": 36,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Piso Laranjeira — sala 12",
+                "pax": 36,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Piso Laranjeira — sala 13",
+                "pax": 36,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Piso Laranjeira — sala 14",
+                "pax": 36,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "3 Foyers",
                 "pax": 1300,
                 "tipo": "coquetel"
             },
@@ -236,7 +386,7 @@
                 "tipo": "coquetel"
             },
             {
-                "nome": "Salão de Exposições",
+                "nome": "Salão de Exposições (2.615 m²)",
                 "pax": 0,
                 "tipo": "outro"
             }
@@ -248,17 +398,23 @@
         "Quantidade de aptos": "190",
         "Configuração dos aptos": "SGL, DBL",
         "Número de leitos (capacidade máxima de hóspedes)": "280",
-        "Tipos de pensão": "Café da manhã\nPensão completa",
+        "Tipos de pensão": "Café da manhã",
         "Principais Distâncias": "19 Km do Aeroporto de Viracopos (15 minutos)\n114 Km do Aeroporto de Congonhas\n126 Km Aeroporto Internacional de Guarulhos\n100 Km de São Paulo (capital)\n51 km da Rodovia Santos\n25 Km de Campinas ou Itu\n58 Km de Sorocaba\n80 Km de Piracicaba",
-        "Restaurantes": "1 (capacidade 160 pax)",
+        "Restaurantes": "Restaurante próprio com 160 lugares e lobby bar integrado.",
         "Estrutura de Lazer": "Lobby bar, cobertura com fitness center, sauna e psicina de hidromassagem",
         "Atrações turísticas regionais": "Bares, botecos, casas de shows. Mercado Municipal, Observatório Municipal de Campinas Jean Nicolini, Catedral Metropolitana de Campinas, Bosque dos Jequitibás. Zoo de Americana, Outlet Premium e Wet'n Wild em Itupeva. Holambra, capital nacional das flores.",
         "Principais concorrentes": "Vitória Hotel Convention Indaiatuba\nTravel Inn Wise Indaiatuba\nRamada by WyndhamCampinas Viracopos\nMeliã Campinas",
         "imagem": "/images/hotels/royal-palm-tower-indaiatuba.jpg",
+        "totalSalas": 5,
         "salas": [
             {
-                "nome": "Salão Santos Dumont (4 mód.)",
+                "nome": "Salão Santos Dumont (4 mód.) + Foyer",
                 "pax": 450,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Salão Santos Dumont (4 mód.)",
+                "pax": 400,
                 "tipo": "auditório"
             },
             {
@@ -304,13 +460,15 @@
         "Quantidade de aptos": "82",
         "Configuração dos aptos": "SGL, DBL, TPL, QDL",
         "Número de leitos (capacidade máxima de hóspedes)": "328",
-        "Tipos de pensão": "Café da manhã\nMeia pensão\nPensão completa",
+        "Tipos de pensão": "Café da manhã\nMeia pensão",
         "Principais Distâncias": "42 Km do Aeroporto de Florianópolis (45 minutos)\n30 Km do Centro de Florianópolis",
         "Restaurantes": "1 (capacidade 80 pax)",
-        "Estrutura de Lazer": "Lounge bar, saunas, 2 piscinas, bar à beira da piscina, espaço para crianças, quadra de\ntênis, campo de futebol, quadras de vôlei de praia, futevôlei e beach tennis, área interna de jogos com sinuca.",
+        "Estrutura de Lazer": "Lounge bar, saunas, 1 piscina, 2 jakuzzis, bar à beira da piscina, espaço para crianças, quadra de tênis, campo de futebol, quadras de vôlei de praia, futevôlei e beach tennis, área interna de jogos com sinuca.",
         "Atrações turísticas regionais": "Praia dos Ingleses, passeios em Santo Antônio de Lisboa, Praia de Jurerê, Praia do Forte, Praia dos Ingleses, Praia do Santinho e Canasvieiras.",
         "Principais concorrentes": "Il Campanário\nCostão do Santinho\nJurerê Beach Village",
         "imagem": "/images/hotels/oceania-park-hotel.jpg",
+        "maxPax": 3000,
+        "totalSalas": 8,
         "salas": [
             {
                 "nome": "Sala Diamante",
@@ -333,16 +491,6 @@
                 "tipo": "auditório"
             },
             {
-                "nome": "Sala hotel A",
-                "pax": 100,
-                "tipo": "auditório"
-            },
-            {
-                "nome": "Sala hotel B",
-                "pax": 80,
-                "tipo": "auditório"
-            },
-            {
                 "nome": "Foyer",
                 "pax": 500,
                 "tipo": "banquete"
@@ -355,22 +503,22 @@
         "Quantidade de aptos": "83",
         "Configuração dos aptos": "SGL, DBL, TPL",
         "Número de leitos (capacidade máxima de hóspedes)": "259",
-        "Tipos de pensão": "Café da manhã\nMeia pensão\nPensão completa",
+        "Tipos de pensão": "Café da manhã\nMeia pensão",
         "Principais Distâncias": "9 Km do Aeroporto de Florianópolis (10 minutos)\n500 m do Centro de Florianópolis\n900 m do Centrosul (3 minutos)",
         "Restaurantes": "1 (capacidade 90 pax)",
-        "Estrutura de Lazer": "Bar e academia",
+        "Estrutura de Lazer": "Restaurante e academia",
         "Atrações turísticas regionais": "Ponte Hercílio Luz, Mercado Público, Catedral Metropolitana, Palácio Cruz e Sousa, Praça XV de Novembro, Museu Casa de Câmara e Cadeia, Prédio da Casa de Alfândega, Avenida Beira Mar Norte.",
         "Principais concorrentes": "Intercity\nFlorianópolis Palace Hotel / Rede Andrade Floph\nFaial Prime Suites",
         "imagem": "/images/hotels/iate-hotel.avif",
         "salas": [
             {
-                "nome": "Sala B",
-                "pax": 120,
+                "nome": "Sala Imperatriz",
+                "pax": 100,
                 "tipo": "auditório"
             },
             {
-                "nome": "Sala A",
-                "pax": 100,
+                "nome": "Sala Pôr do Sol",
+                "pax": 80,
                 "tipo": "auditório"
             }
         ]
@@ -390,13 +538,8 @@
         "imagem": "/images/hotels/hotel-7.webp",
         "salas": [
             {
-                "nome": "Sala Mar",
-                "pax": 60,
-                "tipo": "auditório"
-            },
-            {
                 "nome": "Sala Terra",
-                "pax": 20,
+                "pax": 30,
                 "tipo": "auditório"
             }
         ]
@@ -410,10 +553,11 @@
         "Tipos de pensão": "All Inclusive",
         "Principais Distâncias": "Maceió − 48 km\nAeroporto Internacional de Maceió − 62 km",
         "Restaurantes": "7 restaurantes",
-        "Estrutura de Lazer": "Piscina, Parque Aquático, 1 quadra poliesportiva, 1 quadra de tênis, 1 quadra de futebol de areia, 1 quadra de volêi de praia e beach tennis, Academia, Espaço Galera, Sala de jogos, Spa",
+        "Estrutura de Lazer": "Quatro piscinas, sete restaurantes, cinco bares, Clube Nep voltado para as crianças com parque aquático, Spa Satsanga, boate, entre outros atrativos.",
         "Atrações turísticas regionais": "Piscinas naturais de Pajuçara, Orla de Ponta Verde, Praia de Ipioca, Feirinha de Artesanato da Pajuçara, Barracas de Praia",
         "Principais concorrentes": "Maceio Mar Hotel, Jatiúca Hotel e Resort, Hotel Ritz Lagoa da Anta, Matsubara Hotel",
         "imagem": "/images/hotels/vila-gale-alagoas.webp",
+        "maxPax": 1300,
         "salas": [
             {
                 "nome": "Master",
@@ -460,7 +604,13 @@
         "Atrações turísticas regionais": "Praias urbanas como a Praia do Futuro (ideal para banho e barracas estruturadas), Meireles (feirinha de artesanato) e Iracema (ponte dos ingleses). Destacam-se também o complexo cultural Dragão do Mar, o Mercado Central, o Theatro José de Alencar e o famoso parque aquático Beach Park, localizado na vizinha Aquiraz. ",
         "Principais concorrentes": "Beach Park, Hotel Parque das Fontes, Hotel Gran Marquise, Dom Pedro Laguna, Carmel Hotéis",
         "imagem": "/images/hotels/vila-gale-cumbuco.webp",
+        "maxPax": 600,
         "salas": [
+            {
+                "nome": "Master (Marés + Salvador)",
+                "pax": 600,
+                "tipo": "auditório"
+            },
             {
                 "nome": "Marés",
                 "pax": 450,
@@ -511,6 +661,8 @@
         "Atrações turísticas regionais": "Ilha Grande, Lagoa Zaul e Lagoa Verde, Passeios de Barco e Ilhas, Centro Histórico, Natureza e Trilhas, Infraestrutura Turística",
         "Principais concorrentes": "Fasano Angra dos Reis",
         "imagem": "/images/hotels/vila-gale-eco-resort-angra.webp",
+        "maxPax": 1900,
+        "totalSalas": 11,
         "salas": [
             {
                 "nome": "Ballroom",
@@ -592,6 +744,7 @@
         "Atrações turísticas regionais": "Praia de Calhetas, Praia do Paiva, Praia Enseada dos Corais, Oraua di Saupe, Praia do Paiva, Igreja Nossa Senhora de Nazaré, Pedra do Xareu Beach, Praia Paraíso, Praia Gaibu",
         "Principais concorrentes": "Mercure Recife Navegantes Hotel, El Aram, Hotel Villa Santo Agostinho",
         "imagem": "/images/hotels/vila-gale-eco-resort-do-cabo.webp",
+        "maxPax": 700,
         "salas": [
             {
                 "nome": "Esmeralda (1+2+3)",
@@ -599,18 +752,8 @@
                 "tipo": "configuração"
             },
             {
-                "nome": "Aquarius (1+2+3)",
-                "pax": 500,
-                "tipo": "configuração"
-            },
-            {
                 "nome": "Esmeralda 1",
                 "pax": 250,
-                "tipo": "auditório"
-            },
-            {
-                "nome": "Aquarius 3",
-                "pax": 180,
                 "tipo": "auditório"
             },
             {
@@ -624,18 +767,28 @@
                 "tipo": "auditório"
             },
             {
+                "nome": "Aquarius (1+2+3)",
+                "pax": 500,
+                "tipo": "configuração"
+            },
+            {
                 "nome": "Aquarius 1",
                 "pax": 140,
                 "tipo": "auditório"
             },
             {
-                "nome": "Água Marinha (1+2)",
-                "pax": 130,
+                "nome": "Aquarius 2",
+                "pax": 100,
                 "tipo": "auditório"
             },
             {
-                "nome": "Aquarius 2",
-                "pax": 100,
+                "nome": "Aquarius 3",
+                "pax": 180,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Água Marinha (1+2)",
+                "pax": 130,
                 "tipo": "auditório"
             },
             {
@@ -656,7 +809,7 @@
             {
                 "nome": "Business Center",
                 "pax": 30,
-                "tipo": "boardroom"
+                "tipo": "auditório"
             }
         ]
     },
@@ -673,12 +826,8 @@
         "Atrações turísticas regionais": "Praia do Futuro, Meireles, Iracema, Centro Dragão do Mar de Arte e Cultura, Mercado Central de Fortaleza, Theatro José de Alencar, Beach Park",
         "Principais concorrentes": "Blue Tree Towers Fortaleza, Luzeiros Fortaleza, Praiano Hotel, Gran Mareiro, Holiday Inn, Hotel Diogo, Hotel Gran Marquise",
         "imagem": "/images/hotels/vila-gale-fortaleza.jpg",
+        "maxPax": 800,
         "salas": [
-            {
-                "nome": "Vinicius de Morais + José de Alencar",
-                "pax": 800,
-                "tipo": "configuração"
-            },
             {
                 "nome": "Vinicius de Morais",
                 "pax": 400,
@@ -734,6 +883,8 @@
         "Atrações turísticas regionais": "Praia de Guarajuba, Barra do Jacuípe, Itacimirim, Praia de Jauá, Rio Capivara, Praia do Forte",
         "Principais concorrentes": "Bahia Plaza Hotel, Camaçari Plaza Hotel, Hotel Cambuci",
         "imagem": "/images/hotels/vila-gale-mares.webp",
+        "maxPax": 780,
+        "totalSalas": 6,
         "salas": [
             {
                 "nome": "Salão Marés",
@@ -787,28 +938,28 @@
                 "tipo": "auditório"
             },
             {
-                "nome": "Mangueira",
-                "pax": 0,
-                "tipo": "auditório"
-            },
-            {
-                "nome": "Portela",
-                "pax": 0,
-                "tipo": "auditório"
-            },
-            {
                 "nome": "Vila Isabel",
-                "pax": 0,
-                "tipo": "auditório"
-            },
-            {
-                "nome": "Salgueiro",
-                "pax": 0,
+                "pax": 150,
                 "tipo": "auditório"
             },
             {
                 "nome": "Grande Rio",
-                "pax": 0,
+                "pax": 100,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Mangueira",
+                "pax": 90,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Portela",
+                "pax": 50,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Salgueiro",
+                "pax": 40,
                 "tipo": "auditório"
             }
         ]
@@ -829,28 +980,38 @@
         "salas": [
             {
                 "nome": "Pablo Neruda",
-                "pax": 200,
+                "pax": 100,
                 "tipo": "auditório"
             },
             {
                 "nome": "Vinicius de Moraes",
-                "pax": 0,
+                "pax": 70,
                 "tipo": "auditório"
             },
             {
                 "nome": "Tom Jobim",
-                "pax": 0,
+                "pax": 70,
                 "tipo": "auditório"
             },
             {
                 "nome": "Noel Rosa",
-                "pax": 0,
+                "pax": 70,
                 "tipo": "auditório"
             },
             {
                 "nome": "Ari Barroso",
-                "pax": 0,
+                "pax": 30,
                 "tipo": "auditório"
+            },
+            {
+                "nome": "Foyer Pablo Neruda",
+                "pax": 200,
+                "tipo": "coquetel"
+            },
+            {
+                "nome": "Foyer Tom Jobim",
+                "pax": 80,
+                "tipo": "coquetel"
             }
         ]
     },
@@ -874,29 +1035,29 @@
                 "tipo": "auditório"
             },
             {
+                "nome": "Foyer",
+                "pax": 700,
+                "tipo": "auditório"
+            },
+            {
                 "nome": "Cumbuco",
-                "pax": 0,
+                "pax": 60,
                 "tipo": "auditório"
             },
             {
                 "nome": "Marés",
-                "pax": 0,
+                "pax": 60,
                 "tipo": "auditório"
             },
             {
                 "nome": "Salvador",
-                "pax": 0,
+                "pax": 60,
                 "tipo": "auditório"
             },
             {
                 "nome": "Fortaleza",
-                "pax": 0,
+                "pax": 60,
                 "tipo": "auditório"
-            },
-            {
-                "nome": "Foyer",
-                "pax": 0,
-                "tipo": "coquetel"
             }
         ]
     },
@@ -913,10 +1074,17 @@
         "Atrações turísticas regionais": "Mercado Ver-o-Peso, Estação das Docas, Forte do Presépio, Catedral da Sé, Mangal das Garças",
         "Principais concorrentes": "Grand Mercure Belém, Radisson Belém",
         "imagem": "/images/hotels/vila-gale-collection-amazonia.jpg",
+        "maxPax": 300,
+        "totalSalas": 3,
         "salas": [
             {
-                "nome": "Sala Master Carlos Gomes",
-                "pax": 450,
+                "nome": "Galpão 7 e 8",
+                "pax": 300,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Galpão 8",
+                "pax": 250,
                 "tipo": "auditório"
             }
         ]
@@ -934,10 +1102,52 @@
         "Atrações turísticas regionais": "Museu da Inconfidência, Praça Tiradentes, Igreja São Francisco de Assis, Minas de Ouro",
         "Principais concorrentes": "Solar do Rosário, Pousada do Mondego",
         "imagem": "/images/hotels/vila-gale-ouro-preto.webp",
+        "maxPax": 900,
+        "totalSalas": 10,
         "salas": [
             {
-                "nome": "Salão Master Tiradentes",
-                "pax": 500,
+                "nome": "Salão Pelé",
+                "pax": 840,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Anfiteatro Tiradentes",
+                "pax": 240,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Sala Aleijadinho",
+                "pax": 150,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Sala Juscelino Kubitschek",
+                "pax": 150,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Sala Xica da Silva",
+                "pax": 100,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Sala São José Cafaso",
+                "pax": 50,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Sala Alberto Santos Dumont",
+                "pax": 40,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Sala D. João VI",
+                "pax": 40,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Capela São João Bosco",
+                "pax": 70,
                 "tipo": "auditório"
             }
         ]
@@ -955,21 +1165,38 @@
         "Atrações turísticas regionais": "Floripa Shopping, Praias do Norte",
         "Principais concorrentes": "Mercure Florianópolis",
         "imagem": "/images/hotels/intercity-portofino.webp",
+        "maxPax": 400,
+        "totalSalas": 5,
         "salas": [
             {
-                "nome": "Sala principal",
-                "pax": 250,
+                "nome": "Sala Portofino",
+                "pax": 400,
                 "tipo": "auditório"
             },
             {
-                "nome": "Sala 2",
-                "pax": 0,
+                "nome": "Sala Marina",
+                "pax": 100,
                 "tipo": "auditório"
             },
             {
-                "nome": "Sala 3",
-                "pax": 0,
+                "nome": "Sala Castello Brown",
+                "pax": 90,
                 "tipo": "auditório"
+            },
+            {
+                "nome": "Splendido Restaurante",
+                "pax": 130,
+                "tipo": "banquete"
+            },
+            {
+                "nome": "Espaço La Terraza",
+                "pax": 94,
+                "tipo": "banquete"
+            },
+            {
+                "nome": "Sala Executive Delfino",
+                "pax": 10,
+                "tipo": "boardroom"
             }
         ]
     },
@@ -986,15 +1213,27 @@
         "Atrações turísticas regionais": "Mercado Público, Ponte Hercílio Luz",
         "Principais concorrentes": "Blue Tree Florianópolis",
         "imagem": "/images/hotels/intercity-centro.webp",
+        "maxPax": 200,
+        "totalSalas": 4,
         "salas": [
             {
-                "nome": "Sala principal",
-                "pax": 150,
+                "nome": "Graciosa",
+                "pax": 200,
                 "tipo": "auditório"
             },
             {
-                "nome": "Sala 2",
-                "pax": 0,
+                "nome": "Flores",
+                "pax": 70,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "Santa Maria",
+                "pax": 60,
+                "tipo": "auditório"
+            },
+            {
+                "nome": "São Jorge",
+                "pax": 60,
                 "tipo": "auditório"
             }
         ]
@@ -1012,65 +1251,52 @@
         "Atrações turísticas regionais": "Praia Central, Parque Unipraias, Roda Gigante",
         "Principais concorrentes": "Infinity Blue, Mercure Camboriú",
         "imagem": "/images/hotels/sibara.jpg",
+        "maxPax": 2500,
+        "totalSalas": 10,
         "salas": [
             {
-                "nome": "Salão principal",
-                "pax": 1200,
+                "nome": "Mediterrâneo",
+                "pax": 1100,
                 "tipo": "auditório"
             },
             {
-                "nome": "Sala 2",
-                "pax": 0,
+                "nome": "Adriático",
+                "pax": 400,
                 "tipo": "auditório"
             },
             {
-                "nome": "Sala 3",
-                "pax": 0,
+                "nome": "Ártico",
+                "pax": 120,
                 "tipo": "auditório"
             },
             {
-                "nome": "Sala 4",
-                "pax": 0,
+                "nome": "Báltico",
+                "pax": 120,
                 "tipo": "auditório"
             },
             {
-                "nome": "Sala 5",
-                "pax": 0,
+                "nome": "Mármara",
+                "pax": 80,
                 "tipo": "auditório"
             },
             {
-                "nome": "Sala 6",
-                "pax": 0,
+                "nome": "Java",
+                "pax": 60,
                 "tipo": "auditório"
             },
             {
-                "nome": "Sala 7",
-                "pax": 0,
+                "nome": "Índico",
+                "pax": 60,
                 "tipo": "auditório"
             },
             {
-                "nome": "Sala 8",
-                "pax": 0,
+                "nome": "Cáspio",
+                "pax": 50,
                 "tipo": "auditório"
             },
             {
-                "nome": "Sala 9",
-                "pax": 0,
-                "tipo": "auditório"
-            },
-            {
-                "nome": "Sala 10",
-                "pax": 0,
-                "tipo": "auditório"
-            },
-            {
-                "nome": "Sala 11",
-                "pax": 0,
-                "tipo": "auditório"
-            },
-            {
-                "nome": "Sala 12",
-                "pax": 0,
+                "nome": "Egeu",
+                "pax": 50,
                 "tipo": "auditório"
             }
         ]

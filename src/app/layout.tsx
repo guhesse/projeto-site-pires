@@ -13,11 +13,11 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://pires.tur.br"),
   title: "Pires — Inteligência e Negócios para o seu Espaço ou Evento",
   description:
-    "30 anos de atuação no mercado nacional e internacional. Curadoria de locais e terceirização comercial para espaços e eventos.",
+    "+ de 30 anos de atuação no mercado nacional e internacional. Curadoria de locais e terceirização comercial para espaços e eventos.",
   openGraph: {
     title: "Pires — Inteligência e Negócios para o seu Espaço ou Evento",
     description:
-      "30 anos de atuação no mercado nacional e internacional. Curadoria de locais e terceirização comercial para espaços e eventos.",
+      "+ de 30 anos de atuação no mercado nacional e internacional. Curadoria de locais e terceirização comercial para espaços e eventos.",
     url: "https://pires.tur.br",
     siteName: "Pires",
     images: [
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Pires — Inteligência e Negócios para o seu Espaço ou Evento",
     description:
-      "30 anos de atuação no mercado nacional e internacional. Curadoria de locais e terceirização comercial para espaços e eventos.",
+      "+ de 30 anos de atuação no mercado nacional e internacional. Curadoria de locais e terceirização comercial para espaços e eventos.",
     images: ["/images/hotels/royal-palm-hall.jpg"],
   },
 };

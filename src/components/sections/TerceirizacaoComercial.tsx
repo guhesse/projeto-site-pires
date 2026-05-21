@@ -26,7 +26,7 @@ const features = [
     icon: ConciergeBell,
     title: "Expertise de Mercado",
     description:
-      "30 anos de relacionamento para garantir as melhores condições e o melhor custo-benefício.",
+      "+ de 30 anos de relacionamento para garantir as melhores condições e o melhor custo-benefício.",
   },
 ];
 

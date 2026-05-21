@@ -39,7 +39,7 @@ export default function CuradoriaLocais() {
           {/* Heading */}
           <FadeIn>
             <h2 className="text-[28px] lg:text-[48px] leading-[1.15] font-light tracking-tight text-[#3A0814] max-w-[887px]">
-              30 anos de atuação no mercado
+              + de 30 anos de atuação no mercado
               nacional e internacional.
             </h2>
           </FadeIn>

@@ -5,6 +5,7 @@ import { ArrowLeft, ArrowRight, Users, MapPin, Bed, UtensilsCrossed, Dumbbell, B
 import Navbar from "@/components/Navbar";
 import FooterSection from "@/components/sections/FooterSection";
 import ContatoForm from "@/components/sections/ContatoForm";
+import RelatedHotels from "@/components/sections/RelatedHotels";
 import FadeIn from "@/components/FadeIn";
 import type { Hotel } from "@/lib/hotels";
 
@@ -108,7 +109,11 @@ export default function HotelDetailView({ hotel }: Props) {
                     <InfoItem
                       icon={<Bed className="w-5 h-5" />}
                       label="Apartamentos"
-                      value={`${hotel.rooms} aptos — ${hotel.roomConfig}`}
+                      value={
+                        hotel.roomConfig && hotel.roomConfig !== "-"
+                          ? `${hotel.rooms} aptos — ${hotel.roomConfig}`
+                          : hotel.rooms
+                      }
                     />
                   )}
 
@@ -225,6 +230,9 @@ export default function HotelDetailView({ hotel }: Props) {
             </div>
           </div>
         </section>
+
+        {/* ── Outros hotéis parceiros ── */}
+        <RelatedHotels currentSlug={hotel.slug} />
 
         {/* ── Contato Form Section ── */}
         <ContatoForm />

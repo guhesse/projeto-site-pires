@@ -11,7 +11,7 @@ const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MSG}`;
 const highlights = [
   {
     icon: MapPin,
-    label: "+23 locais curados",
+    label: "+23 hotéis parceiros",
     sublabel: "Do litoral ao interior, Brasil e exterior",
   },
   {
@@ -75,7 +75,7 @@ export default function HomeCTA() {
                            text-[14px] lg:text-[16px] font-light transition-all duration-300
                            whitespace-nowrap"
               >
-                Ver locais curados
+                Ver hotéis parceiros
                 <ArrowRight className="w-4 h-4" />
               </Link>
             </div>

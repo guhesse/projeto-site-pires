@@ -47,7 +47,7 @@ export default function Hero() {
                 {/* Badge de credibilidade */}
                 <span className="inline-flex items-center gap-2 bg-[#A01259]/10 border border-[#A01259]/20 text-[#A01259] rounded-full px-4 py-1.5 text-[11px] lg:text-[12px] font-light tracking-widest uppercase w-fit">
                   <Award className="w-3.5 h-3.5" />
-                  30 anos de mercado · Brasil e Exterior
+                  + de 30 anos de mercado · Brasil e Exterior
                 </span>
 
                 <h1 className="text-[30px] lg:text-[48px] leading-[1.15] font-light tracking-tight text-[#3A0814]">
@@ -80,8 +80,7 @@ export default function Hero() {
 
                 {/* Description text — copy com mais personalidade */}
                 <p className="text-[14px] lg:text-[17px] font-light text-[#3A0814]/80 leading-relaxed">
-                  Da seleção do local à geração de demanda —
-                  uma curadoria para quem não improvisa.
+                  Inteligência estratégica para conectar eventos, destinos e oportunidades.
                 </p>
               </div>
             </FadeIn>
@@ -107,7 +106,7 @@ export default function Hero() {
                 <div className="flex items-center gap-2 bg-[#F0EBED]/90 backdrop-blur-sm rounded-full px-4 py-2.5">
                   <div className="w-2 h-2 rounded-full bg-[#A01259] animate-pulse" />
                   <span className="text-[12px] lg:text-[14px] font-light text-[#3A0814] tracking-wide">
-                    +23 locais curados · Costão, Royal Palm, Vila Galé e mais
+                    +23 hotéis parceiros · RB Hotelaria, Royal Palm, Vila Galé e mais
                   </span>
                 </div>
               </div>

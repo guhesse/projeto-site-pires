@@ -32,6 +32,10 @@ export interface HotelRaw {
     "Principais concorrentes": string;
     /** Array estruturado de salas/espaços de eventos */
     salas: Sala[];
+    /** Capacidade máxima de evento exibida no card (sobrescreve soma calculada) */
+    maxPax?: number;
+    /** Total de salas exibido no card (sobrescreve contagem calculada) */
+    totalSalas?: number;
 }
 
 export interface HotelTag {
@@ -117,20 +121,20 @@ function generateTags(raw: HotelRaw): HotelTag[] {
 
     // Tipos que contam como "salas" para o chip de contagem
     const TIPOS_SALA: SalaTipo[] = ["auditório", "boardroom", "apoio"];
-    const salasCount = salas.filter((s) => TIPOS_SALA.includes(s.tipo)).length;
+    const salasCount = raw.totalSalas ?? salas.filter((s) => TIPOS_SALA.includes(s.tipo)).length;
 
-    // Capacidade total (soma de pax)
-    const totalPax = parseTotalPax(salas);
+    // Capacidade exibida no card: usa maxPax explícito ou soma calculada
+    const displayPax = raw.maxPax ?? parseTotalPax(salas);
 
     // Tag 1 — Nº de apartamentos (sempre)
     if (!isNaN(rooms) && rooms > 0) {
         tags.push({ label: `${rooms} aptos`, type: "rooms" });
     }
 
-    // Tag 2 — Capacidade total (sempre que houver salas)
-    if (totalPax > 0) {
+    // Tag 2 — Capacidade (sempre que houver salas ou maxPax)
+    if (displayPax > 0) {
         tags.push({
-            label: `${totalPax.toLocaleString("pt-BR")} pax`,
+            label: `${displayPax.toLocaleString("pt-BR")} pax`,
             type: "capacity",
         });
     }
@@ -168,7 +172,7 @@ export function parseHotel(raw: HotelRaw): Hotel {
         maxGuests: raw["Número de leitos (capacidade máxima de hóspedes)"],
         pensionTypes: extractPensions(raw["Tipos de pensão"]),
         auditoriumCapacity: raw.salas?.length ? Math.max(...raw.salas.map((s) => s.pax)) : 0,
-        totalPax: parseTotalPax(raw.salas ?? []),
+        totalPax: raw.maxPax ?? parseTotalPax(raw.salas ?? []),
         salas: raw.salas ?? [],
         distances: raw["Principais Distâncias"],
         restaurants: raw.Restaurantes,

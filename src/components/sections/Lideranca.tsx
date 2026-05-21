@@ -37,7 +37,7 @@ export default function Lideranca() {
                   <p className="text-[14px] lg:text-[20px] leading-[1.15] font-light text-[#A78991] max-w-[540px]">
                     Sob o comando de Juliana Pires, nossa Diretora Comercial,
                     unimos tradição e inovação para entregar resultados reais.
-                    São 30 anos de atuação estratégica, construindo pontes
+                    + de 30 anos de atuação estratégica, construindo pontes
                     sólidas entre destinos, espaços e os maiores eventos do
                     Brasil e do exterior.
                   </p>
