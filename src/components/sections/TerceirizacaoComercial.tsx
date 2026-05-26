@@ -49,9 +49,9 @@ export default function TerceirizacaoComercial() {
                 Para organizadores de eventos
               </span>
               <h2 className="text-[28px] lg:text-[48px] leading-[1.15] font-light tracking-tight text-[#3A0814] max-w-[887px]">
-                Curadoria de Locais:
+                Seleção Inteligente de
                 <br />
-                Para quem organiza eventos
+                Hotéis e Espaços
               </h2>
             </div>
           </FadeIn>

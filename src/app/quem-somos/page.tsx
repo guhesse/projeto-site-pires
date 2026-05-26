@@ -6,12 +6,12 @@ import {
     Anchor,
     TrendingUp,
     Cpu,
-    Globe,
     Building2,
     Star,
     ArrowRight,
     Handshake,
     Lightbulb,
+    Shield,
 } from "lucide-react";
 
 export const metadata = {
@@ -47,8 +47,8 @@ export const metadata = {
 /* ── Stats ── */
 const stats = [
     { value: "3", label: "Gerações" },
-    { value: "+30", label: "Anos de mercado" },
-    { value: "+200", label: "Eventos realizados" },
+    { value: "+33", label: "Anos de mercado" },
+    { value: "+1.200", label: "Eventos realizados" },
     { value: "2", label: "Continentes" },
 ];
 
@@ -69,7 +69,7 @@ const generations = [
         name: "Pires Destinos e Eventos",
         title: "Consolidação Nacional",
         description:
-            "A empresa diversificou sua atuação em turismo corporativo, captação de eventos e representação comercial de grandes resorts como o Costão do Santinho. Parcerias estratégicas com Royal Palm, Vila Galé, RB Hotelaria e outras redes solidificaram a presença nacional e internacional.",
+            "Sob a direção de Juliana Pires, a empresa ampliou sua atuação no turismo corporativo, captação de eventos e representação comercial estratégica de hotéis, resorts e espaços de eventos. Parcerias com grupos como RB Hotelaria, Royal Palm, Vila Galé e outras redes fortaleceram a presença nacional da Pires no mercado de eventos e hotelaria, consolidando sua atuação baseada em relacionamento, inteligência comercial e geração de oportunidades.",
         accent: "#6D3B47",
     },
     {
@@ -78,14 +78,13 @@ const generations = [
         name: "Orçamenta.ai",
         title: "Tecnologia & Futuro",
         description:
-            "Mantendo a essência familiar, a empresa avança com a Orçamenta.ai — plataforma que integra automação e inteligência artificial para otimizar orçamentos no setor hoteleiro e de eventos.",
+            "Idealizada por Juliana Pires e coordenada por João Manuel Pires, a Orçamenta.ai nasce da experiência prática da Pires no mercado de eventos e hotelaria. A plataforma une automação e inteligência artificial para acelerar orçamentos, otimizar processos comerciais e trazer mais inteligência operacional para hotéis e espaços de eventos, conectando tecnologia, velocidade e eficiência comercial.",
         accent: "#3A0814",
     },
 ];
 
 /* ── Parceiros ── */
 const partners = [
-    "Costão do Santinho Resort Golf & Spa",
     "Complexo Royal Palm Hotels & Resorts",
     "Rede Vila Galé",
     "RB Hotelaria",
@@ -94,24 +93,24 @@ const partners = [
 /* ── Pilares ── */
 const pillars = [
     {
-        icon: Star,
-        title: "Tradição",
-        description: "Décadas de relacionamentos sólidos com os maiores destinos e redes do Brasil.",
-    },
-    {
-        icon: Globe,
-        title: "Alcance Global",
-        description: "Promoção internacional do Brasil e conexão com mercados da Europa e América Latina.",
-    },
-    {
         icon: Handshake,
-        title: "Parcerias Estratégicas",
-        description: "Representação comercial de destinos premium com resultados comprovados.",
+        title: "Relacionamento que gera oportunidades",
+        description: "Acreditamos em relações sólidas e duradouras. Escutamos, entendemos e conectamos as pessoas certas para transformar oportunidades em resultados.",
+    },
+    {
+        icon: TrendingUp,
+        title: "Inteligência que orienta decisões",
+        description: "Reunimos experiência, dados e visão estratégica para entender o mercado, antecipar movimentos e tomar decisões que geram resultado.",
+    },
+    {
+        icon: Star,
+        title: "Compromisso com resultados reais",
+        description: "Mais do que promessas, entregamos resultado. Atuamos com foco, responsabilidade e transparência em cada etapa do projeto.",
     },
     {
         icon: Lightbulb,
-        title: "Inovação Contínua",
-        description: "Integração de tecnologia de ponta para criar soluções ágeis e inteligentes.",
+        title: "Evolução constante e propósito claro",
+        description: "Estamos sempre aprendendo, melhorando e inovando com propósito: gerar impacto positivo no mercado, nos nossos parceiros e nas pessoas.",
     },
 ];
 
@@ -243,8 +242,9 @@ export default function QuemSomosPage() {
                                     </h2>
                                 </div>
                                 <p className="text-[14px] lg:text-[18px] font-light text-[#A78991] leading-relaxed lg:self-end max-w-[480px]">
-                                    Da fundação à vanguarda tecnológica, nossos valores permanecem
-                                    os mesmos: inteligência, relacionamento e entrega.
+                                    Desde o início, o que nos move é simples:{" "}
+                                    <strong className="font-medium text-[#3A0814]">inteligência, relacionamento e entrega.</strong>{" "}
+                                    Esses valores fazem parte do nosso jeito de atuar e estão presentes em tudo que fazemos.
                                 </p>
                             </div>
 
@@ -268,11 +268,26 @@ export default function QuemSomosPage() {
                                     );
                                 })}
                             </div>
+
+                            {/* Rodapé da seção */}
+                            <div className="mt-6 flex flex-col sm:flex-row items-start sm:items-center gap-4 rounded-[20px] bg-[#E2D8DA] px-6 py-5">
+                                <div className="flex items-center gap-3 shrink-0">
+                                    <div className="w-9 h-9 rounded-full bg-[#A01259]/10 flex items-center justify-center">
+                                        <Shield className="w-4 h-4 text-[#A01259]" strokeWidth={1.5} />
+                                    </div>
+                                    <p className="text-[13px] lg:text-[14px] font-light text-[#A78991]">
+                                        Esses pilares não estão apenas no papel.
+                                    </p>
+                                </div>
+                                <div className="hidden sm:block w-px h-8 bg-[#C4B5BB] shrink-0" />
+                                <p className="text-[13px] lg:text-[15px] font-light text-[#3A0814] leading-snug">
+                                    Eles guiam nossas escolhas, nossas parcerias{" "}
+                                    <strong className="font-medium">e os resultados que entregamos todos os dias.</strong>
+                                </p>
+                            </div>
                         </div>
                     </FadeIn>
                 </section>
-
-                {/* ── PARCERIAS ── */}
                 <section className="flex justify-center px-6">
                     <FadeIn className="w-full max-w-[1380px]">
                         <div className="rounded-[25px] bg-[#3A0814] px-6 lg:px-[54px] py-12 lg:py-[72px] flex flex-col lg:flex-row gap-10 lg:gap-20 relative overflow-hidden">
@@ -289,7 +304,7 @@ export default function QuemSomosPage() {
                                     Parcerias que constroem o mercado.
                                 </h2>
                                 <p className="text-[14px] lg:text-[16px] font-light text-[#C4A0B0] leading-relaxed">
-                                    Mais de duas décadas representando os maiores nomes
+                                    Mais de três décadas representando os maiores nomes
                                     do setor hoteleiro e de eventos no Brasil — nacionais
                                     e internacionalmente.
                                 </p>
@@ -334,14 +349,11 @@ export default function QuemSomosPage() {
                                 </div>
 
                                 <h2 className="text-[28px] lg:text-[48px] leading-[1.1] font-light tracking-tight text-white">
-                                    Orçamenta.ai — a inovação que o setor esperava.
+                                    Orçamenta.ai — inovação aplicada à hotelaria e eventos.
                                 </h2>
 
                                 <p className="text-[14px] lg:text-[18px] font-light text-[#F8C8DE] leading-relaxed">
-                                    Desenvolvida para otimizar o processo de orçamentos em hotelaria
-                                    e eventos, a Orçamenta.ai une automação e inteligência artificial
-                                    para que a tradição Pires se expresse também na velocidade e precisão
-                                    das soluções modernas.
+                                    A Orçamenta.ai nasce da vivência real do mercado para simplificar operações, acelerar orçamentos e otimizar processos comerciais. Uma plataforma que conecta tecnologia, velocidade e inteligência operacional ao setor de eventos e hotelaria.
                                 </p>
 
                                 <a

@@ -23,7 +23,7 @@ const features = [
         icon: UsersRound,
         title: "Máxima Ocupação",
         description:
-            "Prospecção ativa e relacionamento contínuo com organizadores de eventos para manter seu espaço sempre produtivo.",
+            "Prospecção ativa e relacionamento contínuo com empresas, entidades e tomadores de decisão para manter seu espaço sempre produtivo.",
     },
     {
         icon: Store,
@@ -50,9 +50,9 @@ export default function TerceirizacaoComercialSection() {
                                 Para proprietários de espaços
                             </span>
                             <h2 className="text-[28px] lg:text-[48px] leading-[1.15] font-light tracking-tight text-[#3A0814] max-w-[887px]">
-                                Terceirização Comercial:
+                                Inteligência Comercial para
                                 <br />
-                                Inteligência para o seu Espaço
+                                Espaços e Hotéis
                             </h2>
                         </div>
                     </FadeIn>
