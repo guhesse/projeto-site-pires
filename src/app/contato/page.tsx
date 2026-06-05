@@ -2,6 +2,22 @@ import Navbar from "@/components/Navbar";
 import ContatoForm from "@/components/sections/ContatoForm";
 import FooterSection from "@/components/sections/FooterSection";
 
+export const metadata = {
+  title: "Contato | Pires Destinos e Eventos",
+  description:
+    "Fale com um especialista da Pires. Encontre o hotel ou espaço ideal para o seu evento, ou conheça a terceirização comercial para o seu espaço.",
+  alternates: { canonical: "/contato" },
+  openGraph: {
+    title: "Contato | Pires Destinos e Eventos",
+    description:
+      "Fale com um especialista da Pires. Encontre o hotel ou espaço ideal para o seu evento.",
+    url: "https://piresdestinoseventos.com.br/contato",
+    siteName: "Pires Destinos e Eventos",
+    locale: "pt_BR",
+    type: "website",
+  },
+};
+
 /**
  * Contato — página dedicada para o formulário
  * Acessada via CTA "Falar com um especialista" da Navbar

@@ -7,6 +7,10 @@ import HomeCTA from "@/components/sections/HomeCTA";
 import ContatoForm from "@/components/sections/ContatoForm";
 import FooterSection from "@/components/sections/FooterSection";
 
+export const metadata = {
+  alternates: { canonical: "/" },
+};
+
 /**
  * Home — Figma frame "Home" (1:3)
  *

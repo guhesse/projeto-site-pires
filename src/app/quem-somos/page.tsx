@@ -22,8 +22,8 @@ export const metadata = {
         title: "Quem Somos | Pires",
         description:
             "Três gerações de tradição, expertise em captação de eventos e inovação com a Orçamenta.ai. Conheça a história da Pires.",
-        url: "https://pires.tur.br/quem-somos",
-        siteName: "Pires",
+        url: "https://piresdestinoseventos.com.br/quem-somos",
+        siteName: "Pires Destinos e Eventos",
         images: [
             {
                 url: "/images/hotels/royal-palm-hall.jpg",

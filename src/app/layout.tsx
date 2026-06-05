@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Rubik } from "next/font/google";
+import JsonLd from "@/components/JsonLd";
 import "./globals.css";
 
 const rubik = Rubik({
@@ -10,16 +11,16 @@ const rubik = Rubik({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://pires.tur.br"),
+  metadataBase: new URL("https://piresdestinoseventos.com.br"),
   title: "Pires — Inteligência e Negócios para o seu Espaço ou Evento",
   description:
-    "+ de 30 anos de atuação no mercado nacional e internacional. Curadoria de locais e terceirização comercial para espaços e eventos.",
+    "+ de 30 anos de atuação no mercado nacional e internacional. Curadoria de hotéis e espaços de eventos e terceirização comercial para hotelaria.",
   openGraph: {
     title: "Pires — Inteligência e Negócios para o seu Espaço ou Evento",
     description:
-      "+ de 30 anos de atuação no mercado nacional e internacional. Curadoria de locais e terceirização comercial para espaços e eventos.",
-    url: "https://pires.tur.br",
-    siteName: "Pires",
+      "+ de 30 anos de atuação no mercado nacional e internacional. Curadoria de hotéis e espaços de eventos e terceirização comercial para hotelaria.",
+    url: "https://piresdestinoseventos.com.br",
+    siteName: "Pires Destinos e Eventos",
     images: [
       {
         url: "/images/hotels/royal-palm-hall.jpg",
@@ -35,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Pires — Inteligência e Negócios para o seu Espaço ou Evento",
     description:
-      "+ de 30 anos de atuação no mercado nacional e internacional. Curadoria de locais e terceirização comercial para espaços e eventos.",
+      "+ de 30 anos de atuação no mercado nacional e internacional. Curadoria de hotéis e espaços de eventos e terceirização comercial para hotelaria.",
     images: ["/images/hotels/royal-palm-hall.jpg"],
   },
 };
@@ -46,7 +47,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className={`${rubik.variable} h-full antialiased scroll-smooth`}>
+    <html lang="pt-BR" className={`${rubik.variable} h-full antialiased scroll-smooth`} data-scroll-behavior="smooth">
+      <head>
+        <JsonLd />
+      </head>
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
